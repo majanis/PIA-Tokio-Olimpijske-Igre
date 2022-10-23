@@ -1,0 +1,68 @@
+button{
+    background-color:black;
+    border:none;
+    color:palegoldenrod;
+    cursor:pointer;
+    height:30px;
+    }
+    
+button:hover{
+        background-color: maroon;
+    }
+
+.font{
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a:visited{
+        color:darkred;
+    }
+    
+a:hover{
+        font-weight:bold;
+        color:teal;
+    }
+
+.takmicenja{
+text-align: center;
+width:100%;
+border: 1px solid black;
+}
+
+.takmicenja td{
+    border: 1px solid black;
+}
+.takmicenja th{
+    border: 1px solid black;
+}
+
+.sportisti{
+    width:100%;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.sportisti td{
+    width:180px;
+    border: 1px solid black;
+}
+
+.sportisti th{
+    border: 1px solid black;
+}
+
+.sportovi{
+    border: 1px solid black;
+}
+
+.sportovi th{
+    border: 1px solid black;
+}
+
+.sportovi td{
+    border: 1px solid black;
+}
+
+.h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

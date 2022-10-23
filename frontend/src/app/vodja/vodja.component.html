@@ -1,0 +1,222 @@
+<div class='font'>
+<div class='row'>
+<div class='col-sm-6'>
+<h1>Dobrodosli, {{user.imeprezime}}</h1>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-6'>
+<h3>Niste ovo trazili?</h3>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-6'>
+<ul>
+  <li><a href="home">Home</a></li>
+  <li><a href="login">Login</a></li>
+  <li><a href="register">Register</a></li>
+</ul>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-12'>
+<button (click)=logOut()>Log out</button>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-6'>
+<h2>Dodaj sportistu u sistem:</h2>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-12'>
+<form>
+    <tr>
+        <td>Ime i prezime:</td> 
+        <td>
+            <input type="text" name='imeiprezimenovog' [(ngModel)]='imeiprezimenovog' required>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Sport:</td>
+        <td>
+        <select id="sport"  name="sportnovog" [(ngModel)]='sportnovog'>
+        <option selected disabled>sport</option>
+        <option *ngFor='let d of allSports'>{{d.ime}}</option>   
+        </select>        
+        </td>
+    </tr>
+
+    <tr>
+        <td>Disciplina/e:</td>
+        <td>
+        <select id="sport"  name="disciplinenovog" [(ngModel)]='disciplinenovog' required multiple>
+        <option select disabled>disciplina</option>
+        <option>bez discipline</option>   
+        <option *ngFor='let d of allDisciplines'>{{d}}</option>
+        </select>
+        </td>        
+    </tr>
+
+    <tr>
+        <td>Pol:</td>
+        <td>
+        <input type="radio" id="muski" name="polnovog" value="muski" [(ngModel)]='polnovog'
+         checked>
+        <label for="muski">muski</label>
+        <input type="radio" id="zenski" name="polnovog" value="zenski" [(ngModel)]='polnovog'>
+        <label for="zenski">zenski</label>
+        </td>
+
+    </tr>
+    <button (click)='addNewAthlete()'>Dodaj</button>
+</form>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-6'>
+<h2>Takmicenja:</h2>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-12'>
+<table class='takmicenja'>
+    <tr>
+        <th>Sport</th>
+        <th>Disciplina</th>
+        <th>Pol</th>
+        <th>Vrsta</th>
+        <th>Lokacija</th>
+        <th>Delegat</th>
+        <th>Broj takmicara min</th>
+        <th>Broj takmicara max</th>
+        <th>Prijavi takmicara</th>
+    </tr>
+    <tr *ngFor='let t of allCompetitions'>
+        <td>
+            {{t.sport}}
+        </td>
+        <td>
+            {{t.disciplina}}
+        </td>
+        <td>
+            {{t.pol}}
+        </td>
+        <td>
+            {{t.vrsta}}
+        </td>
+        <td>
+            {{t.lokacija}}
+        </td>
+        <td>
+            {{t.delegat}}
+        </td>
+        <td>
+            {{t.brojTakmicaraMin}}
+        </td>
+        <td>
+            {{t.brojTakmicaraMax}}
+        </td>
+        <td>
+            <button (click)="izaberiTakmicenje(t)">dodaj takmicara</button>
+        </td>
+    </tr>
+</table>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-12'>
+<h3 *ngIf='picked==true'>Dodati takmicara za takmicenje: {{pickedCompetition.sport}} {{pickedCompetition.disciplina}} {{pickedCompetition.pol}}:</h3>
+</div>
+</div>
+
+<div class='row'>
+<div class='col-sm-6'>
+<table *ngIf='picked==true'>
+    <tr>
+        <th>Sportista</th>
+        <th>Prijavi</th>
+    </tr>
+    <tr *ngFor='let qa of athletesForDiscipline'>
+        <td>
+            {{qa.imeprezime}}
+        </td>
+        <td>
+            <button (click)='addAthleteToCompetition(qa)'>Dodaj</button>
+        </td>
+    </tr>
+</table>
+</div>
+</div>
+<br>
+
+<div class='row'>
+<div class='col-sm-6'>
+<h3>Moji sportisti:</h3>
+</div>
+</div>
+
+<div class='row'>
+<div class='col-sm-12'>
+ <table class='sportisti'>
+    <tr>
+    <th>Ime i prezime</th>
+    <th>Sport</th>
+    <th>Disciplina</th>
+    <th>Pol</th>
+    </tr>
+    <tr *ngFor='let t of myAthletes'>
+        <td>
+            {{t.imeprezime}}
+        </td>
+        <td>
+            {{t.sport}}
+        </td>
+        <td>
+            {{t.discipline}}
+        </td>
+        <td>
+            {{t.pol}}
+        </td>
+    </tr>
+</table>
+</div>
+</div>
+<br>
+<div class='row'>
+<div class='col-sm-6'>
+<button (click)="getAllSports()">Prikazi moje sportove</button>
+</div>
+</div>
+<br>
+
+<div class='row'>
+<div class='col-sm-6'>
+<table *ngIf='showSports==true' class='sportovi'>
+    <tr>
+        <th>Sport</th>
+        </tr>
+        <tr *ngFor='let t of allSportsIHave'>
+            <td>
+                {{t}}
+            </td>
+        </tr>
+</table>
+<br>
+</div>
+</div>
+<!--
+<table *ngIf='showDisciplines==true'>
+    <tr>
+        <th>Disciplina</th>
+    </tr>
+        <tr *ngFor='let t of allDisciplinesForSport'>
+            <td>
+                {{t}}
+            </td>
+                <button (click)='getAthletesByMyDiscipline(t)'>
+        </tr>
+</table>
+-->
+</div>

@@ -1,0 +1,100 @@
+
+.table2, .th2, .td2 {
+    border: 1px solid black;
+  }
+
+.table2{
+    width:100%
+}
+
+.homeimage{
+    width:50px;
+    height:30px
+}
+
+.col-sm-3{
+    padding:2px;
+    align-items: center;
+}
+
+.col-sm-3 a:visited{
+    color:darkred;
+}
+
+.col-sm-3 a:hover{
+    font-weight:bold;
+    color:teal;
+}
+
+.col-sm-6 a:visited{
+    color:darkred;
+}
+
+.col-sm-6 a:hover{
+    font-weight:bold;
+    color:teal;
+}
+
+.col-sm-4 table th{
+    text-align: center;
+}
+
+.col-sm-12 table{
+    width:100%;
+    border: 1px solid black;
+}
+
+.col-sm-12 th, .col-sm-12 td{
+    border: 1px solid black;
+}
+
+.col-sm-12 th{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.content{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+
+.col-sm-12{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+
+.font{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.tekst{
+    font-style:oblique;
+}
+
+.td3{
+    text-align: center;
+    width:130px;
+    height:30px;
+}
+
+.pretraga{
+    width:100%;
+    border:none;
+}
+
+button{
+background-color:black;
+border:none;
+color:palegoldenrod;
+cursor:pointer;
+}
+
+button:hover{
+    background-color: maroon;
+}
+
+
+

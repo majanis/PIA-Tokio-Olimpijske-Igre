@@ -1,0 +1,383 @@
+<div class='font'>
+<div class='row'>
+<div class='col-sm-12'>
+<h1>Zdravo, {{user.imeprezime}}</h1>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-6'>
+<h3>Navigacija</h3>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-6'>
+<ul>
+  <li><a href="home">Home</a></li>
+  <li><a href="login">Login</a></li>
+  <li><a href="register">Register</a></li>
+</ul>
+<button (click)=logOut()>Log out</button>
+</div>
+</div>
+
+<div class='row'>
+<div class='col-sm-12'>
+<h2 *ngIf='requests.length!=0'>Zahtevi za odobrenje:</h2>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-6'>
+<table *ngIf='requests.length!=0' class='zahtevi'>
+    <tr>
+        <th>Ime i prezime</th>
+        <th>Nacionalnost</th>
+        <th>Pozicija</th>
+        <th>Odobri korisnika</th>
+    </tr>
+    <tr *ngFor='let r of requests'>
+        <td>
+            {{r.imeprezime}}
+        </td>
+        <td>
+            {{r.nacionalnost}}
+        </td>
+        <td>
+            {{r.type}}
+        </td>
+        <td>
+            <button (click)="approveUser(r)">Odobri</button> 
+        </td>
+    </tr>
+</table>
+</div>
+</div>
+<div class='row'>
+<br>
+</div>
+<div class='row'>
+    <div class='col-sm-12'>
+    <h2>Rekordi:</h2>
+    <table class='rekordi'>
+        <tr>
+            <th>Sport</th>
+            <th>Disciplina</th>
+            <th>Sportista</th>
+            <th>Nacionalnost</th>
+            <th>Vrednost</th>
+            <th>Olimpijske igre</th>
+            <th>Godina</th>
+        </tr>
+        <tr *ngFor='let r of allRecords | paginate: {itemsPerPage:itemsPerPage, currentPage: p};'>
+            <td>{{r.sport}}</td>
+            <td>{{r.disciplina}}</td>
+            <td>{{r.takmicar}}</td>
+            <td>{{r.nacionalnost}}</td>
+            <td>{{r.vrednost}}</td>
+            <td>{{r.mesto}}</td>
+            <td>{{r.godina}}</td>
+        </tr>
+        <pagination-controls (pageChange)="p = $event" ></pagination-controls>
+    </table>
+    </div>
+    </div>
+
+<div class='row'>
+<br>
+</div>
+<div class='row'>
+<div class='col-sm-12'>
+<h2>Sportovi:</h2>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-12'>
+<table class='sportovi'>
+    <tr>
+        <th>Ime</th>
+        <th>Discipline</th>
+        <th>Vrsta</th>
+        <th>Max igraca</th>
+        <th>Min igraca</th>
+    </tr>
+    <tr *ngFor='let s of allSports'>
+        <td>
+            {{s.ime}}
+        </td>
+        <td>
+            {{s.discipline}}
+        </td>
+        <td>
+            {{s.vrsta}}
+        </td>
+        <td>
+            {{s.maxIgraca}}
+        </td>
+        <td>
+            {{s.minIgraca}}
+        </td>
+    </tr>
+</table>
+</div>
+</div>
+
+<div class='row'>
+<div class='col-sm-12'>
+<h2>Uneti sport u sistem:</h2>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-12'>
+<form>
+    <tr>
+        <td>Ime:</td>
+        <td>
+            <input type='text' name='ime' [(ngModel)]='ime'>
+        </td>
+    </tr>
+    <tr>
+        <td>Discipline:</td>
+        <td>
+            <input type='text' name='disciplinestr' [(ngModel)]='disciplinestr'>
+        </td>
+    </tr>
+    <tr>
+        <td>Ekipni/individualni?:</td>
+        <td>
+            <input type="radio" id="ekipni" name="vrsta" value="ekipni" [(ngModel)]='vrsta'
+            checked> <!--proveriti da li radi sa ovim ngmodel-->
+            <label for="ekipni">ekipni</label>
+            <input type="radio" id="individualni" name="vrsta" value="individualni" [(ngModel)]='vrsta'>
+        <label for="individualni">individualni</label>
+        </td>
+    </tr>
+    <tr>
+        <td>Maksimalan broj igraca?:</td>
+        <td>
+            <input type='number' name='maxIgraca' [(ngModel)]='maxIgraca'>
+        </td>
+    </tr>
+    <tr>
+        <td>Minimalan broj igraca?:</td>
+        <td>
+            <input type='number' name='minIgraca' [(ngModel)]='minIgraca'>
+        </td>
+    </tr>
+    <button (click)='addSport()'>Dodaj</button>
+</form>
+<br>
+<h6>Pri navodjenju discipline razdvojite zarezom.</h6>
+<br>
+</div>
+</div>
+
+<div class='row'>
+<div class='col-sm-12'>
+</div>
+</div>
+<h2>Uneti novu disciplinu po zelji:</h2>
+<div class='row'>
+<div class='col-sm-12'>
+<form>
+    <tr>
+        <td>Sport:</td>
+        <td>
+            <input type='text' name='sportnovediscipline' [(ngModel)]='sportnovediscipline'>
+        </td>
+    </tr>
+    <tr>
+        <td>Ime discipline:</td>
+        <td>
+            <input type='text' name='novadisciplina' [(ngModel)]='novadisciplina'>
+        </td>
+    </tr>
+    <tr>
+        <td>Ekipni/individualni?:</td>
+        <td>
+            <input type="radio" id="ekipninova" name="vrstanovediscipline" value="ekipni" [(ngModel)]='vrstanovediscipline'
+            checked> <!--proveriti da li radi sa ovim ngmodel-->
+            <label for="ekipninova">ekipni</label>
+            <input type="radio" id="individualninova" name="vrstanovediscipline" value="individualni" [(ngModel)]='vrstanovediscipline'>
+        <label for="individualninova">individualni</label>
+        </td>
+    </tr>
+    <tr>
+        <td>Maksimalan broj igraca:</td>
+        <td>
+            <input type='number' name='maxIgracanovediscipline' [(ngModel)]='maxIgracanovediscipline'>
+        </td>
+    </tr>
+    <tr>
+        <td>Minimalan broj igraca:</td>
+        <td>
+            <input type='number' name='minIgracanovediscipline' [(ngModel)]='minIgracanovediscipline'>
+        </td>
+    </tr>
+    <button (click)='addDiscipline()'>Dodaj</button>
+</form>
+</div>
+</div>
+
+<div class='row'>
+<div class='col-sm-12'>
+<h2>Takmicenja:</h2>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-12'>
+<table class='takmicenja'>
+    <tr>
+        <th>Sport</th>
+        <th>Disciplina</th>
+        <th>Pol</th>
+        <th>Vrsta</th>
+        <th>Lokacija</th>
+        <th>Broj takmicara min</th>
+        <th>Broj takmicara max</th>
+        <th>Format</th>
+        <th>Delegati</th>
+        <th>Dodaj takmicare</th>
+        <th>Potvrdi takmicenje</th>
+        <th>Dodeli delegata</th>
+    </tr>
+    <tr *ngFor='let t of allCompetitions'>
+        <td>
+            {{t.sport}}
+        </td>
+        <td>
+            {{t.disciplina}}
+        </td>
+        <td>
+            {{t.pol}}
+        </td>
+        <td>
+            {{t.vrsta}}
+        </td>
+        <td>
+            {{t.lokacija}}
+        </td>
+        <td>
+            {{t.brojTakmicaraMin}}
+        </td>
+        <td>
+            {{t.brojTakmicaraMax}}
+        </td>
+        <td>
+            {{t.format}}
+        </td>
+        <td>
+            {{t.delegat}}
+        </td>
+        <td>
+            <button (click)="prikaziDodavanje(t)">Dodajte takmicare!</button>
+        </td>
+        <td>
+            <button (click)="potvrdiTakmicenje(t)">Potvrdite</button>
+        </td>
+        <td>
+            <button (click)="prikaziDelegate(t)">Dodaj delegate</button>
+        </td>
+    </tr>
+</table>
+</div>
+</div>
+
+<div class='row'>
+<div class='col-sm-12'>
+<table *ngIf='showDelegates==true' class='delegati'>
+    <th>Delegati:</th>
+    <tr *ngFor='let a of allDelegates'>
+    <td>
+        {{a.imeprezime}}
+    </td>
+    <td>
+        <button (click)="addDelegateToCompetition(a)">Dodaj</button>
+    </td>
+    </tr>
+</table>
+</div>
+</div>
+
+<div class='row'>
+<div class='col-sm-12'>
+<table *ngIf='picked==true' class='sportisti'>
+    <th>Sportisti:</th>
+    <tr *ngFor='let a of athleteSelection'>
+    <td>
+        {{a.imeprezime}}
+    </td>
+    <td>
+        <input type="text" name='a.rezultat' [(ngModel)]="a.rezultat" required placeholder='ranking na ATP/WTA listi' *ngIf='isTennis==true'>
+    </td>
+    <td>
+        <button (click)="addAthleteToCompetition(a)">Dodaj</button>
+    </td>
+    </tr>
+</table>
+</div>
+</div>
+
+<div class='row'>
+<div class='col-sm-12'>
+<h3>Dodajte takmicenje:</h3>
+<form>
+    <tr>
+        <td>Sport:</td>
+        <td>
+            <select id="sport"  name="sporttakmicenja" [(ngModel)]='sporttakmicenja' required>
+                <option selected disabled>sport</option>
+                <option *ngFor='let d of allSports'>{{d.ime}}</option>   
+            </select>        
+        </td>
+    </tr>
+    <tr>
+        <td>Disciplina:</td>
+        <td>
+            <select id="sport"  name="disciplinatakmicenja" [(ngModel)]='disciplinatakmicenja' required>
+                <option selected disabled>disciplina</option>
+                <option *ngFor='let d of allDisciplines'>{{d}}</option>   
+            </select>        
+        </td>
+    </tr>
+    <tr>
+        <td>Ekipni/individualni?:</td>
+        <td>
+            <input type="radio" id="ekipnitakmicenja" name="vrstatakmicenja" value="ekipni" [(ngModel)]='vrstatakmicenja'
+            checked> <!--proveriti da li radi sa ovim ngmodel-->
+            <label for="ekipnitakmicenja">ekipni</label>
+            <input type="radio" id="individualnitakmicenja" name="vrstatakmicenja" value="individualni" [(ngModel)]='vrstatakmicenja'>
+        <label for="individualnitakmicenja">individualni</label>
+        </td>
+    </tr>
+    <tr>
+        <td>Pol?:</td>
+        <td>
+            <input type="radio" id="muskitakmicenja" name="poltakmicenja" value="muski" [(ngModel)]='poltakmicenja'
+            checked> <!--proveriti da li radi sa ovim ngmodel-->
+            <label for="muskitakmicenja">muski</label>
+            <input type="radio" id="zenskitakmicenja" name="poltakmicenja" value="zenski" [(ngModel)]='poltakmicenja'>
+        <label for="zenskitakmicenja">zenski</label>
+        </td>
+    </tr>
+    <tr>
+        <td>Format?:</td>
+        <td>
+            <input type='text' name='formattakmicenja' [(ngModel)]='formattakmicenja'>
+        </td>
+    </tr>
+    <tr>
+        <td>Minimalan broj takmicara?:</td>
+        <td>
+            <input type='number' name='brojtakmicaramintakmicenja' [(ngModel)]='brojtakmicaramintakmicenja'>
+        </td>
+    </tr>
+    <tr>
+        <td>Maksimalan broj takmicara?:</td>
+        <td>
+            <input type='text' name='brojtakmicaramaxtakmicenja' [(ngModel)]='brojtakmicaramaxtakmicenja'>
+        </td>
+    </tr>
+    <button (click)='addCompetition()'>Dodaj</button>
+</form>
+</div>
+</div>
+</div>

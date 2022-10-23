@@ -1,0 +1,86 @@
+<div class='font'>
+<div class='row'>
+<div class='col-sm-12'>
+<h1>Log In</h1>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-6'>
+<h3>Niste ovo trazili?</h3>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-3'>
+<ul>
+  <li><a href="home">Home</a></li>
+  <li><a href="register">Register new account</a></li>
+</ul>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-6'>
+<form>
+    <h3>Pristupite svom nalogu</h3>
+    <table>
+        <tr>
+            <td>Username:</td>
+            <td>
+                <input type='text' id='username1' name='username1' [(ngModel)]='username'>
+            </td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td>
+                <input type='password' id='password1' name='password1' [(ngModel)]='password'>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button (click)='logIn()'>Log In</button>
+            </td>
+        </tr>
+    </table>
+</form>
+</div>
+</div>
+<br>
+<div class="row">
+<div class="col-sm-6">
+<h3>Zelite da promenite lozinku?</h3>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-6">
+<form>
+    <table>
+        <tr>
+            <td>Username:</td>
+            <td>
+                <input type='text' id='username2' name='username2' [(ngModel)]='username2'>
+            </td>
+        </tr>
+        <tr>
+            <td>Old password:</td>
+            <td>
+                <input type='password' id='password2' name='password2' [(ngModel)]='password2'>
+            </td>
+        </tr>
+        <tr>
+            <td>New password:</td>
+            <td>
+                <input type='password' id='newpassword' name='newpassword' [(ngModel)]='newpassword'>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button (click)='changePassword()'>Change Password</button>
+            </td>
+        </tr>
+    </table>
+</form>
+<br>
+<h6>Pravilan format lozinke: minimalno 8, maksimalno 12 karaktera. Mora poceti slovom. Minimalno 1 veliko, minimalno 3 mala slova, minimalno 3 numerika i minimalno 2 specijalna karaktera. Maksimalan broj uzastopnih ponavljanja je 3.
+</h6>
+</div>
+</div>
+</div>

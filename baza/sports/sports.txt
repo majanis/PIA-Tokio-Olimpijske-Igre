@@ -1,0 +1,107 @@
+{
+    "_id" : ObjectId("613a3dcc4475c4ff3bcbd5fe"),
+    "ime" : "kosarka",
+    "discipline" : [],
+    "vrsta" : "ekipni",
+    "minIgraca" : 5,
+    "maxIgraca" : 12
+}{
+    "_id" : ObjectId("613a40f64475c4ff3bcbd799"),
+    "ime" : "odbojka",
+    "discipline" : [],
+    "vrsta" : "ekipni",
+    "minIgraca" : 6,
+    "maxIgraca" : 12
+}{
+    "_id" : ObjectId("613a41314475c4ff3bcbd7b7"),
+    "ime" : "plivanje",
+    "discipline" : [ 
+        "100m leptir", 
+        "200m slobodno"
+    ],
+    "vrsta" : "individualni",
+    "maxIgraca" : 1,
+    "minIgraca" : 1
+}{
+    "_id" : ObjectId("613a4ff4afb957284807a560"),
+    "discipline" : [ 
+        "drumska trka 225m"
+    ],
+    "ime" : "biciklizam",
+    "vrsta" : "individualni",
+    "maxIgraca" : 1,
+    "minIgraca" : 1
+}{
+    "_id" : ObjectId("613b7db7ff2fe06f84cbf87e"),
+    "discipline" : [ 
+        "singl"
+    ],
+    "ime" : "tenis",
+    "vrsta" : "individualni",
+    "maxIgraca" : 1,
+    "minIgraca" : 1
+}{
+    "_id" : ObjectId("613b7eb2f6fc40665c6b3f54"),
+    "discipline" : [ 
+        "50m trostav", 
+        "10m vazdusna puska", 
+        "25m malokalib. pistolj", 
+        "10m vazdusni pistolj"
+    ],
+    "ime" : "streljastvo",
+    "vrsta" : "individualni",
+    "maxIgraca" : 1,
+    "minIgraca" : 1
+}{
+    "_id" : ObjectId("613b7ffb32318464787055ca"),
+    "discipline" : [ 
+        "dubl"
+    ],
+    "ime" : "tenis",
+    "vrsta" : "ekipni",
+    "maxIgraca" : 2,
+    "minIgraca" : 2
+}{
+    "_id" : ObjectId("614384ad80304d1a8f7b948a"),
+    "ime" : "atletika",
+    "discipline" : [ 
+        "100m trcanje", 
+        "200m trcanje", 
+        "400m trcanje", 
+        "800m trcanje", 
+        "5000m trcanje", 
+        "10000m trcanje", 
+        "maraton", 
+        "skok u vis", 
+        "skok u dalj", 
+        "troskok", 
+        "skok s motkom", 
+        "bacanje kugle", 
+        "bacanje diska", 
+        "bacanje kladiva", 
+        "bacanje koplja", 
+        "20km brzo hodanje", 
+        "50km brzo hodanje"
+    ],
+    "vrsta" : "individualni",
+    "minIgraca" : 1,
+    "maxIgraca" : 1
+}{
+    "_id" : ObjectId("615057e7c8e66b64e4fb18df"),
+    "discipline" : [],
+    "ime" : "vaterpolo",
+    "vrsta" : "ekipni",
+    "maxIgraca" : 6,
+    "minIgraca" : 13,
+    "__v" : 0
+}{
+    "_id" : ObjectId("61505d8688a9b03f7225bf61"),
+    "ime" : "atletika",
+    "discipline" : [ 
+        "stafetno trcanje 100", 
+        "stafetno trcanje 400"
+    ],
+    "vrsta" : "ekipni",
+    "maxIgraca" : 4,
+    "minIgraca" : 4
+}

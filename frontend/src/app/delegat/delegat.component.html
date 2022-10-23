@@ -1,0 +1,532 @@
+<div class='font'>
+<div class='row'>
+<div class='col-sm-12'>
+<h1>Dobrodosli, {{user.imeprezime}}</h1>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-12'>
+<h3>Niste ovo trazili?</h3>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-12'>
+<ul>
+  <li><a href="home">Home</a></li>
+  <li><a href="login">Login</a></li>
+  <li><a href="register">Register</a></li>
+</ul>
+</div>
+</div>
+
+<div class='row'>
+<div class='col-sm-12'>
+<h3 *ngIf='allMyCompetitions.length!=0'>Sva moja takmicenja</h3>
+<table *ngIf='allMyCompetitions.length!=0' class='takmicenja'>
+    <tr>
+        <th>Sport</th>
+        <th>Disciplina</th>
+        <th>Pol</th>
+        <th>Vrsta</th>
+        <th>Lokacija</th>
+        <th>Trajanje</th>
+        <th>Unesi rezultate</th>
+    </tr>
+    <tr *ngFor='let c of allMyCompetitions'>
+        <td>
+            {{c.sport}}
+        </td>
+        <td>
+            {{c.disciplina}}
+        </td>
+        <td>
+            {{c.pol}}
+        </td>
+        <td>
+            {{c.vrsta}}
+        </td>
+        <td>
+            {{c.lokacija}}
+        </td>
+        <td>
+            {{c.trajanje}}
+        </td>
+        <td>
+            <button (click)="showEnterResults(c)">Unesi rezultate</button>
+        </td>
+    </tr>
+</table>
+<br>
+</div>
+</div>
+
+<div class='row' *ngIf='enterRes==true'>
+
+<div class='col-sm-12'>
+<h3>Unesite rezultate za: {{myCompetition.sport}}, {{myCompetition.disciplina}}, {{myCompetition.pol}}, {{myCompetition.vrsta}}</h3>
+</div>
+<div class='col-sm-12'>
+<form *ngIf='trcanje100m==true && enterRes==true'> 
+    <tr *ngFor='let a of athletesformycompetition'>
+        <td>{{a.imeprezime}} </td>
+        <td>{{a.nacionalnost}} </td>
+        <input type="text" name="athletesformycompetition" [(ngModel)]='a.rezultat' placeholder="ss,tt" required>
+    </tr>
+    <tr>
+        <button (click)="trcanje100mrez()">Potvrdi</button>
+    </tr>
+</form>
+</div>
+
+<div class='col-sm-12'>
+<form *ngIf='poslednjipokusaj==true && trcanje100m==true && enterRes==true'>
+<tr *ngFor='let d of poslednjipokusajigraci'>
+    <td>{{d.imeprezime}} {{d.nacionalnost}}</td>
+    <input type="text" name="dva" [(ngModel)]='d.rezultat' placeholder="ss,tt" required>
+</tr>
+<tr>
+    <button (click)="resortArrayFor100m(poslednjipokusajigraci)">Potvrdi</button>
+</tr>
+</form> 
+</div>
+
+<div class='col-sm-12'>
+<form *ngIf='trcanje800m==true && enterRes==true'> 
+    <tr *ngFor='let a of athletesformycompetition'>
+        <td>{{a.imeprezime}} </td>
+        <td>{{a.nacionalnost}} </td>
+        <input type="text" name="athletesformycompetition" [(ngModel)]='a.rezultat' required placeholder="mm:ss,tt">
+    </tr>
+    <tr>
+        <button (click)="trcanje800mrez()">Potvrdi</button>
+    </tr>
+    <table *ngIf='myCompetition.zavrseno==true'>
+        <tr>Medalisti:</tr>
+        <tr>Zlato: {{athletesformycompetition[0].imeprezime}}</tr>
+        <tr>Srebro: {{athletesformycompetition[1].imeprezime}}</tr>
+        <tr>Bronza: {{athletesformycompetition[2].imeprezime}}</tr>
+    </table>
+</form>
+</div>
+
+<div class='col-sm-12'>
+<form *ngIf='poslednjipokusaj==true && trcanje800m==true  && enterRes==true'>
+    <tr *ngFor='let d of poslednjipokusajigraci'>
+        <td>{{d.imeprezime}} {{d.nacionalnost}}</td>
+        <input type="text" name="dva" [(ngModel)]='d.rezultat' placeholder="mm:ss,tt" required>
+    </tr>
+    <tr>
+        <button (click)="resortArrayFor800m(poslednjipokusajigraci)">Potvrdi</button>
+    </tr>
+    </form> 
+</div>
+
+<div class='col-sm-12'>
+<form *ngIf='skokuvis==true && enterRes==true'>
+    <tr *ngFor='let a of athletesformycompetition'>
+        <td>{{a.imeprezime}} </td>
+        <td>{{a.nacionalnost}} </td>
+        <td>
+        <input type="text" id="prvi" name="athletesformycompetition1" [(ngModel)]='a.rezultat' required placeholder="m,cm prvi pokusaj"> 
+        </td>
+        <td>
+        <input type="text" id="drugi" name="athletesformycompetition2" [(ngModel)]='a.rezultat' required placeholder="m,cm drugi pokusaj" > 
+        </td>
+        <td>
+        <input type="text" id="treci" name="athletesformycompetition3" [(ngModel)]='a.rezultat' required placeholder="m,cm treci pokusaj">
+        </td> 
+    </tr>
+    <tr>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        <button (click)='unesiPrviPokusaj()'>Potvrdi prvi pokusaj</button>
+        </td>
+        <td>
+        <button (click)='unesiDrugiPokusaj()'>Potvrdi drugi pokusaj</button>
+        </td>
+        <td>
+        <button (click)='unesiTreciPokusaj()'>Potvrdi treci pokusaj</button>
+        </td>
+        <td>
+        <button (click)="skokuvisrez()">Potvrdi</button>
+        </td>
+    </tr>
+    <table *ngIf='myCompetition.zavrseno==true'>
+        <tr>Medalisti:</tr>
+        <tr>Zlato: {{athletesformycompetition[0].imeprezime}}</tr>
+        <tr>Srebro: {{athletesformycompetition[1].imeprezime}}</tr>
+        <tr>Bronza: {{athletesformycompetition[2].imeprezime}}</tr>
+    </table>
+</form>
+</div>
+
+<div class='col-sm-12'>
+<form *ngIf='poslednjipokusaj==true && skokuvis==true  && enterRes==true'> 
+    <tr *ngFor='let d of poslednjipokusajigraci'>
+        <td>{{d.imeprezime}} {{d.nacionalnost}}</td>
+        <input type="text" name="dva" [(ngModel)]='d.rezultat' placeholder="m,cm" required>
+    </tr>
+    <tr>
+        <button (click)="resortArrayForSkokUVis(poslednjipokusajigraci)">Potvrdi</button>
+    </tr>
+    </form> 
+</div>
+
+<div class='col-sm-12'>
+
+<form *ngIf='trostav==true && enterRes==true'>
+    <tr *ngFor='let a of athletesformycompetition'>
+        <td class="smaller">{{a.imeprezime}} </td>
+        <td class="smaller">{{a.nacionalnost}} </td>
+        <td>
+        <input type="text" name="athletesformycompetition1" [(ngModel)]='a.rezultat' required placeholder="broj krugova"> 
+        </td>
+        <td>
+        <input type="text" name="athletesformycompetition2" [(ngModel)]='a.rezultat' required placeholder="broj krugova"> 
+        </td>
+        <td>
+        <input type="text" name="athletesformycompetition3" [(ngModel)]='a.rezultat' required placeholder="broj krugova">
+        </td> 
+        <td>
+        <input type="text" name="athletesformycompetition4" [(ngModel)]='a.rezultat' required placeholder="broj krugova"> 
+        </td>
+        <td>
+        <input type="text" name="athletesformycompetition5" [(ngModel)]='a.rezultat' required placeholder="broj krugova"> 
+        </td>
+        <td>
+        <input type="text" name="athletesformycompetition6" [(ngModel)]='a.rezultat' required placeholder="broj krugova">
+        </td> 
+        <td>
+
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>
+        <button (click)='unesiPrviPokusajStreljastvo()'>Prvi pokusaj</button>
+        </td>
+        <td>
+        <button (click)='unesiNaredniPokusajStreljastvo()'>Drugi pokusaj</button>
+        </td>
+        <td>
+        <button (click)='unesiNaredniPokusajStreljastvo()'>Treci pokusaj</button>
+        </td>
+        <td>
+        <button (click)='unesiNaredniPokusajStreljastvo()'>Cetvrti pokusaj</button>
+        </td>
+        <td>
+        <button (click)='unesiNaredniPokusajStreljastvo()'>Peti pokusaj</button>
+        </td>
+        <td>
+        <button (click)='unesiNaredniPokusajStreljastvo()'>Sesti pokusaj</button>
+        <td>
+        <button (click)="skokuvisrez()">Potvrdi</button>
+        </td>
+    </tr>
+</form>
+</div>
+
+<div class='col-sm-12'>
+<form *ngIf='poslednjipokusaj==true && trostav==true  && enterRes==true'>
+    <tr *ngFor='let d of poslednjipokusajigraci'>
+        <td>{{d.imeprezime}} {{d.nacionalnost}}</td>
+        <input type="text" name="dva" [(ngModel)]='d.rezultat' placeholder="m,cm" required>
+    </tr>
+    <tr>
+        <button (click)="resortArrayForStreljastvo(poslednjipokusajigraci)">Potvrdi</button>
+    </tr>
+    </form> 
+</div>
+
+<div class='col-sm-12'>
+<form *ngIf='maraton==true && enterRes==true'> 
+    <tr *ngFor='let a of athletesformycompetition'>
+        <td>{{a.imeprezime}} </td>
+        <td>{{a.nacionalnost}} </td>
+        <input type="text" name="athletesformycompetition" [(ngModel)]='a.rezultat' required placeholder="hh:mm:ss">
+    </tr>
+    <tr>
+        <button (click)="maratonrez()">Potvrdi</button>
+    </tr>
+    <table *ngIf='myCompetition.zavrseno==true'>
+        <tr>Medalisti:</tr>
+        <tr>Zlato: {{athletesformycompetition[0].imeprezime}}</tr>
+        <tr>Srebro: {{athletesformycompetition[1].imeprezime}}</tr>
+        <tr>Bronza: {{athletesformycompetition[2].imeprezime}}</tr>
+    </table>
+</form>
+</div>
+
+<div class='col-sm-12'>
+<form *ngIf='poslednjipokusaj==true && maraton==true  && enterRes==true'>
+    <tr *ngFor='let d of poslednjipokusajigraci'>
+        <td>{{d.imeprezime}} {{d.nacionalnost}}</td>
+        <input type="text" name="dva" [(ngModel)]='d.rezultat' placeholder="hh:mm:ss" required>
+    </tr>
+    <tr>
+        <button (click)="resortArrayForMaraton(poslednjipokusajigraci)">Potvrdi</button>
+    </tr>
+    </form> 
+</div>
+
+<div class='col-sm-12'>
+<form *ngIf='drumskatrka==true && enterRes==true'> 
+    <tr *ngFor='let a of athletesformycompetition'>
+        <td>{{a.imeprezime}} </td>
+        <td>{{a.nacionalnost}} </td>
+        <input type="text" name="athletesformycompetition" [(ngModel)]='a.rezultat' required placeholder="hh:mm:ss"> 
+    </tr>
+    <tr>
+        <button (click)="drumskatrkarez()">Potvrdi</button>
+    </tr>
+</form>
+</div>
+
+<div class='col-sm-12'>
+<form *ngIf='poslednjipokusaj==true && drumskatrka==true  && enterRes==true'>
+    <tr *ngFor='let d of poslednjipokusajigraci'>
+        <td>{{d.imeprezime}} {{d.nacionalnost}}</td>
+        <input type="text" name="dva" [(ngModel)]='d.rezultat' placeholder="hh:mm:ss" required>
+    </tr>
+    <tr>
+        <button (click)="resortArrayForMaraton(poslednjipokusajigraci)">Potvrdi</button>
+    </tr>
+    </form>
+    </div>
+
+<div class='col-sm-12'>
+<form *ngIf='tenissingl16==true && enterRes==true'>
+    <h3>Uneti rezultate osmine finala</h3>
+    <tr *ngFor='let a of tenissingl116'>
+        <td>{{a.imeprezime}} </td>
+        <td>{{a.nacionalnost}} </td>
+    </tr>
+    <tr>
+    <input type="text" name="athletesformycompetition116ts" [(ngModel)]='athletesformycompetition116ts' required> 
+    </tr>
+    <tr *ngFor='let a of tenissingl215'>
+        <td>{{a.imeprezime}} </td>
+        <td>{{a.nacionalnost}} </td>
+    </tr>
+    <tr>
+    <input type="text" name="athletesformycompetition215ts" [(ngModel)]='athletesformycompetition215ts' required> 
+    </tr>
+    
+    <tr *ngFor='let a of tenissingl314'>
+        <td>{{a.imeprezime}} </td>
+        <td>{{a.nacionalnost}} </td>
+    </tr>
+    <tr>
+    <input type="text" name="athletesformycompetition314ts" [(ngModel)]='athletesformycompetition314ts' required>
+    </tr>
+
+    <tr *ngFor='let a of tenissingl413'>
+        <td>{{a.imeprezime}} </td>
+        <td>{{a.nacionalnost}} </td>
+    </tr>
+    <input type="text" name="athletesformycompetition413ts" [(ngModel)]='athletesformycompetition413ts' required>
+    <tr *ngFor='let a of tenissingl512'>
+        <td>{{a.imeprezime}} </td>
+        <td>{{a.nacionalnost}} </td>
+    </tr>
+    <tr>
+    <input type="text" name="athletesformycompetition512ts" [(ngModel)]='athletesformycompetition512ts' required>
+    </tr>
+    <tr *ngFor='let a of tenissingl611'>
+        <td>{{a.imeprezime}} </td>
+        <td>{{a.nacionalnost}} </td>
+    </tr>
+    <tr>
+    <input type="text" name="athletesformycompetition611ts" [(ngModel)]='athletesformycompetition611ts' required>
+    </tr>
+    
+    <tr *ngFor='let a of tenissingl710'>
+        <td>{{a.imeprezime}} </td>
+        <td>{{a.nacionalnost}} </td>
+    </tr>
+    <tr>
+    <input type="text" name="athletesformycompetition710ts" [(ngModel)]='athletesformycompetition710ts' required>
+    </tr>
+
+    <tr *ngFor='let a of tenissingl89'>
+        <td>{{a.imeprezime}} </td>
+        <td>{{a.nacionalnost}} </td>
+    </tr>
+    <input type="text" name="athletesformycompetition89ts" [(ngModel)]='athletesformycompetition89ts' required>
+    <tr>
+        <button (click)="tenis16osminafinala()">Potvrdi</button>
+    </tr>
+</form>
+</div>
+
+<div class='col-sm-12'>
+<form *ngIf='tenissingl8==true && enterRes==true'>
+    <h3>Uneti rezultate cetvrtfinala</h3>
+    <tr *ngFor='let a of tenissingl18'>
+        <td>{{a.imeprezime}} </td>
+        <td>{{a.nacionalnost}} </td>
+    </tr>
+    <tr>
+    <input type="text" name="athletesformycompetition18ts" [(ngModel)]='athletesformycompetition18ts' required>
+    </tr>
+    <tr *ngFor='let a of tenissingl27'>
+        <td>{{a.imeprezime}} </td>
+        <td>{{a.nacionalnost}} </td>
+    </tr>
+    <tr>
+    <input type="text" name="athletesformycompetition27ts" [(ngModel)]='athletesformycompetition27ts' required>
+    </tr>
+    
+    <tr *ngFor='let a of tenissingl36'>
+        <td>{{a.imeprezime}} </td>
+        <td>{{a.nacionalnost}} </td>
+    </tr>
+    <tr>
+    <input type="text" name="athletesformycompetition36ts" [(ngModel)]='athletesformycompetition36ts' required>
+    </tr>
+
+    <tr *ngFor='let a of tenissingl45'>
+        <td>{{a.imeprezime}} </td>
+        <td>{{a.nacionalnost}} </td>
+    </tr>
+    <input type="text" name="athletesformycompetition45ts" [(ngModel)]='athletesformycompetition45ts' required>
+    <tr>
+        <button (click)="tenis8cetvrtfinale()">Potvrdi</button>
+    </tr>
+</form>
+</div>
+
+<div class='col-sm-12'>
+<form *ngIf='tenissingl4==true && enterRes==true'>
+    <h4>Uneti rezultate polufinala</h4>
+    <tr *ngFor='let a of tenissingl14'>
+        <td>{{a.imeprezime}} </td>
+        <td>{{a.nacionalnost}} </td>
+    </tr>
+    <tr>
+    <input type="text" name="athletesformycompetition14ts" [(ngModel)]='athletesformycompetition14ts' required>
+    </tr>
+    <tr *ngFor='let a of tenissingl23'>
+        <td>{{a.imeprezime}} </td>
+        <td>{{a.nacionalnost}} </td>
+    </tr>
+    <tr>
+    <input type="text" name="athletesformycompetition23ts" [(ngModel)]='athletesformycompetition23ts' required>
+    </tr>
+    <tr>
+        <button (click)="tenis4polufinale()">Potvrdi</button>
+    </tr>
+    
+    <h4 *ngIf='tenisfinale==true'>Uneti rezultate finala</h4>
+    <tr *ngIf='tenisfinale==true'>
+        <th>Finale:</th>
+    </tr>
+    <tr *ngFor='let a of tenissingl12'>
+        <td>{{a.imeprezime}} </td>
+        <td>{{a.nacionalnost}} </td>
+    </tr>
+    <tr *ngIf='tenisfinale==true'>
+    <input type="text" name="athletesformycompetition12ts" [(ngModel)]='athletesformycompetition12ts' required>
+    </tr>
+    
+    <tr *ngIf='tenisfinale==true'>
+        <th>Trece mesto:</th>
+    </tr>
+    <tr *ngFor='let a of tenissingl34'>
+        <td>{{a.imeprezime}} </td>
+        <td>{{a.nacionalnost}} </td>
+    </tr>
+    <tr *ngIf='tenisfinale==true'>
+    <input type="text" name="athletesformycompetition34ts" [(ngModel)]='athletesformycompetition34ts' required>
+    </tr>
+    <tr *ngIf='tenisfinale==true'>
+        <button (click)="tenisfinalerez()">Potvrdi</button>
+    </tr>
+
+    <table *ngIf='myCompetition.zavrseno==true'>
+        <tr>Medalisti:</tr>
+        <tr>Zlato: {{athletesformycompetition[0].imeprezime}}</tr>
+        <tr>Srebro: {{athletesformycompetition[1].imeprezime}}</tr>
+        <tr>Bronza: {{athletesformycompetition[2].imeprezime}}</tr>
+    </table>
+</form>
+</div>
+
+</div>
+
+
+<div class='row'>
+<div class='col-sm-12'>
+<div *ngIf='myCompetition!=null'>
+    <table *ngIf='gotovo==true || myCompetition.zavrseno==true'>
+        <tr>Rang:</tr>
+        <tr>{{myCompetition.pobednik}}</tr>
+        <tr>{{myCompetition.drugi}}</tr>
+        <tr>{{myCompetition.treci}}</tr>
+    </table>
+</div>
+</div>
+</div>
+<br>
+
+<br>
+<div class='row'>
+<div class='col-sm-6'>
+<h3>Postavite vreme i lokaciju</h3>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-6'>
+<form>
+    <tr>
+        <td>Takmicenje:</td>
+            <td>
+                <select id="takmicenje"  name="myCompetitionString" [(ngModel)]='myCompetitionString'>
+                    <option selected disabled>Odaberite takmicenje</option>
+                    <option *ngFor='let t of allMyCompetitions'>{{t.sport}}, {{t.disciplina}}, {{t.pol}}, {{t.vrsta}}</option>   
+                </select>
+            </td>
+    </tr>
+    <tr>
+        <td>Lokacija:</td>
+            <td>
+                <input type="text" name="location" [(ngModel)]='location'>
+            </td>
+    </tr>
+    <tr>
+        <td>Datum pocetka:</td>
+            <td>
+                <input type="text" name="datumPocetka" [(ngModel)]='datumPocetka' placeholder='23.07.2021.'>
+            </td>
+    </tr>
+    <tr>
+        <td>Vreme pocetka:</td>
+            <td>
+                <input type="text" name="vremePocetka" [(ngModel)]='vremePocetka' placeholder='12:00'>
+            </td>
+    </tr>
+    <tr>
+        <td>Datum kraja:</td>
+            <td>
+                <input type="text" name="datumKraja" [(ngModel)]='datumKraja' placeholder='23.07.2021.'>
+            </td>
+    </tr>
+    <tr>
+        <td>Vreme kraja:</td>
+            <td>
+                <input type="text" name="vremeKraja" [(ngModel)]='vremeKraja' placeholder='12:00'>
+            </td>
+    </tr>
+    <tr>
+        <button (click)='setTimeAndLocation()'>Azuriraj</button>
+    </tr>
+</form>
+</div>
+</div>
+<br>
+<button (click)=logOut()>Log out</button>
+</div>

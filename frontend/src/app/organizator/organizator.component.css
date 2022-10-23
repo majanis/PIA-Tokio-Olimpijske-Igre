@@ -1,0 +1,91 @@
+button{
+    background-color:black;
+    border:none;
+    color:palegoldenrod;
+    cursor:pointer;
+    }
+    
+button:hover{
+        background-color: maroon;
+    }
+
+.col-sm-3{
+        padding:2px;
+        align-items: center;
+    }
+    
+.col-sm-6 a:visited{
+        color:darkred;
+    }
+    
+.col-sm-6 a:hover{
+        font-weight:bold;
+        color:teal;
+    }
+
+.sportovi{
+    width:100%;
+    border: 1px solid black;
+}
+
+.sportovi td{
+    width:20%;
+    height:40px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+
+.sportovi th{
+    border: 1px solid black;
+    text-align: center;
+}
+
+.takmicenja{
+    width:100%;
+}
+
+.takmicenja td, .takmicenja th{
+    text-align: center;
+}
+
+.takmicenja button {
+    height:60px;
+}
+
+.zahtevi{
+    text-align: center;
+    border: 1px solid black;
+    width:100%;
+}
+
+.zahtevi td, .zahtevi th {
+    border: 1px solid black;
+}
+
+.rekordi{
+    width:100%;
+}
+
+.rekordi td{
+    width:14%;
+    text-align: center;
+}
+
+.rekordi th{
+    text-align: center;
+}
+
+.sportisti{
+    text-align:center;
+}
+.delegati{
+    text-align: left;
+}
+
+.delegati th{
+    text-align: left;
+}
+.font{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }

@@ -1,0 +1,81 @@
+<div class='font'>
+<div class='row'>
+<div class='col-sm-6'>
+<h2>Registrujte nalog</h2>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-6'>
+<h4>Niste ovo trazili?</h4>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-6'>
+<ul>
+  <li><a href="home">Home</a></li>
+  <li><a href="login">Login</a></li>
+</ul>
+</div>
+</div>
+
+<div class='row'>
+<div class='col-sm-6'>
+<form>
+    <tr>
+    <td>Username:</td>
+    <td> 
+    <input type="text" name='username' [(ngModel)]='username' required>
+    </td>
+</tr>
+    <tr>
+    <td>Password:</td> 
+    <td>
+    <input type="password" name='password' [(ngModel)]='password' required>
+    </td>
+    </tr>
+    <tr>
+    <td>Potvrdi password:</td> 
+    <td>
+    <input type="password" name='passwordcheck' [(ngModel)]='passwordcheck' required>
+    </td>
+    </tr>
+    <tr>
+    <td>Ime i prezime:</td> 
+    <td>
+    <input type="text" name='imeprezime' [(ngModel)]='imeprezime' required>
+    </td>
+    </tr>
+    <tr>
+    <td>Nacionalnost:</td> 
+    <td>
+    <select id="nacionalnost"  name="nacionalnost" [(ngModel)]='nacionalnost'>
+        <option selected disabled>nacionalnost</option>
+        <option *ngFor='let d of allCountries'>{{d.name}}</option>   
+    </select>
+    </td>
+    </tr>
+    <tr>
+    <td>email:</td>
+    <td>
+    <input type="email" name='email' [(ngModel)]='email' required>
+    </td>
+    </tr>
+    <tr>
+    <td>Uloga:</td>
+    <td>
+    <input type="radio" id="delegat" name="type" value="delegat" [(ngModel)]='type'
+         checked> <!--proveriti da li radi sa ovim ngmodel-->
+     <label for="delegat">delegat</label>
+     <input type="radio" id="vodja" name="type" value="vodja" [(ngModel)]='type'>
+    <label for="vodja">vodja</label>
+    </td>
+    </tr>
+    <br>
+    <button (click)='register()'>Register user</button>
+</form>
+<br>
+<h6>Pravilan format lozinke: minimalno 8, maksimalno 12 karaktera. Mora poceti slovom. Minimalno 1 veliko, minimalno 3 mala slova, minimalno 3 numerika i minimalno 2 specijalna karaktera. Maksimalan broj uzastopnih ponavljanja je 3.
+</h6>
+</div>
+</div>
+</div>

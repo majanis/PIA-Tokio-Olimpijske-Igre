@@ -1,0 +1,737 @@
+{
+    "_id" : ObjectId("6138ca874475c4ff3bcbbab1"),
+    "imeprezime" : "Novak Djokovic",
+    "pol" : "muski",
+    "sport" : "tenis",
+    "discipline" : [ 
+        "singl", 
+        "dubl"
+    ],
+    "nacionalnost" : "Srbija",
+    "gold" : 6,
+    "silver" : 1,
+    "bronze" : 0,
+    "rezultat" : ""
+}{
+    "_id" : ObjectId("6138cadc4475c4ff3bcbbadd"),
+    "imeprezime" : "Naomi Osaka",
+    "pol" : "zenski",
+    "sport" : "tenis",
+    "discipline" : [ 
+        "singl"
+    ],
+    "nacionalnost" : "Japan",
+    "gold" : 0,
+    "silver" : 1,
+    "bronze" : 0,
+    "rezultat" : "8"
+}{
+    "_id" : ObjectId("6138ccd04475c4ff3bcbbba5"),
+    "imeprezime" : "Aleksandar Atanasijevic",
+    "pol" : "muski",
+    "sport" : "odbojka",
+    "discipline" : [],
+    "nacionalnost" : "Srbija",
+    "gold" : 0,
+    "silver" : 0,
+    "bronze" : 0,
+    "rezultat" : ""
+}{
+    "_id" : ObjectId("613b9db44475c4ff3bcbfadc"),
+    "imeprezime" : "Tijana Boskovic",
+    "pol" : "zenski",
+    "sport" : "odbojka",
+    "discipline" : [],
+    "nacionalnost" : "Srbija",
+    "gold" : 0,
+    "silver" : 0,
+    "bronze" : 0,
+    "rezultat" : ""
+}{
+    "_id" : ObjectId("613e11f44475c4ff3bcc3deb"),
+    "imeprezime" : "Milorad Cavic",
+    "pol" : "muski",
+    "sport" : "plivanje",
+    "discipline" : [ 
+        "100m leptir", 
+        "200m slobodno"
+    ],
+    "nacionalnost" : "Srbija",
+    "gold" : 0,
+    "silver" : 1,
+    "bronze" : 0,
+    "rezultat" : ""
+}{
+    "_id" : ObjectId("613e123f4475c4ff3bcc3e30"),
+    "imeprezime" : "Caba Siladji",
+    "pol" : "muski",
+    "sport" : "plivanje",
+    "discipline" : [ 
+        "100m leptir"
+    ],
+    "nacionalnost" : "Srbija",
+    "gold" : 0,
+    "silver" : 0,
+    "bronze" : 0,
+    "rezultat" : ""
+}{
+    "_id" : ObjectId("613e12544475c4ff3bcc3e37"),
+    "imeprezime" : "Nadja Higl",
+    "pol" : "zenski",
+    "sport" : "plivanje",
+    "discipline" : [ 
+        "100m leptir", 
+        "200m slobodno"
+    ],
+    "nacionalnost" : "Srbija",
+    "gold" : 0,
+    "silver" : 0,
+    "bronze" : 0,
+    "rezultat" : ""
+}{
+    "_id" : ObjectId("613e13f84475c4ff3bcc3f4a"),
+    "imeprezime" : "Majkl Felps",
+    "pol" : "muski",
+    "sport" : "plivanje",
+    "discipline" : [ 
+        "100m leptir", 
+        "200m slobodno"
+    ],
+    "nacionalnost" : "SAD",
+    "gold" : 0,
+    "silver" : 1,
+    "bronze" : 1,
+    "rezultat" : ""
+}{
+    "_id" : ObjectId("613e2422bfaad444589e741e"),
+    "discipline" : [ 
+        "100m leptir"
+    ],
+    "imeprezime" : "Ivan Lendjer",
+    "pol" : "muski",
+    "sport" : "plivanje",
+    "nacionalnost" : "Srbija",
+    "gold" : 0,
+    "silver" : 0,
+    "bronze" : 0,
+    "rezultat" : ""
+}{
+    "_id" : ObjectId("613e52b94475c4ff3bcc5af7"),
+    "discipline" : [ 
+        "100m trcanje", 
+        "200m trcanje", 
+        "400m trcanje", 
+        "800m trcanje", 
+        "skok u vis", 
+        "maraton"
+    ],
+    "imeprezime" : "Noa Lajls",
+    "pol" : "muski",
+    "sport" : "atletika",
+    "nacionalnost" : "SAD",
+    "gold" : 0,
+    "silver" : 2,
+    "bronze" : 2,
+    "rezultat" : ""
+}{
+    "_id" : ObjectId("613e52d94475c4ff3bcc5b05"),
+    "discipline" : [ 
+        "100m trcanje", 
+        "200m trcanje", 
+        "400m trcanje", 
+        "800m trcanje", 
+        "skok u vis", 
+        "maraton"
+    ],
+    "imeprezime" : "Son Kroford",
+    "pol" : "muski",
+    "sport" : "atletika",
+    "nacionalnost" : "SAD",
+    "gold" : 0,
+    "silver" : 1,
+    "bronze" : 0,
+    "rezultat" : ""
+}{
+    "_id" : ObjectId("6140972480304d1a8f7aedd6"),
+    "discipline" : [ 
+        "100m trcanje", 
+        "200m trcanje", 
+        "400m trcanje", 
+        "800m trcanje", 
+        "skok u vis", 
+        "maraton"
+    ],
+    "imeprezime" : "Dzastin Gatlin",
+    "pol" : "muski",
+    "sport" : "atletika",
+    "nacionalnost" : "SAD",
+    "gold" : 0,
+    "silver" : 0,
+    "bronze" : 1,
+    "rezultat" : ""
+}{
+    "_id" : ObjectId("6140993982f2735810fced8a"),
+    "discipline" : [ 
+        "100m trcanje", 
+        "200m trcanje", 
+        "400m trcanje", 
+        "skok u vis", 
+        "maraton", 
+        "800m trcanje"
+    ],
+    "imeprezime" : "Riota Jamagata",
+    "pol" : "muski",
+    "sport" : "atletika",
+    "nacionalnost" : "Japan",
+    "gold" : 2,
+    "silver" : 1,
+    "bronze" : 2,
+    "rezultat" : ""
+}{
+    "_id" : ObjectId("61409a6382f2735810fced8d"),
+    "discipline" : [ 
+        "100m trcanje", 
+        "200m trcanje", 
+        "400m trcanje", 
+        "skok u vis", 
+        "800m trcanje", 
+        "maraton"
+    ],
+    "imeprezime" : "Usain Bolt",
+    "pol" : "muski",
+    "sport" : "atletika",
+    "nacionalnost" : "Jamajka",
+    "gold" : 9,
+    "silver" : 2,
+    "bronze" : 1,
+    "rezultat" : ""
+}{
+    "_id" : ObjectId("61409aa182f2735810fced8e"),
+    "discipline" : [ 
+        "100m trcanje", 
+        "200m trcanje", 
+        "400m trcanje", 
+        "skok u vis", 
+        "800m trcanje", 
+        "maraton"
+    ],
+    "imeprezime" : "Asafa Pauel",
+    "pol" : "muski",
+    "sport" : "atletika",
+    "nacionalnost" : "Jamajka",
+    "gold" : 0,
+    "silver" : 2,
+    "bronze" : 2,
+    "rezultat" : ""
+}{
+    "_id" : ObjectId("61409aaf82f2735810fced8f"),
+    "discipline" : [ 
+        "100m trcanje", 
+        "200m trcanje", 
+        "400m trcanje", 
+        "skok u vis", 
+        "800m trcanje", 
+        "maraton"
+    ],
+    "imeprezime" : "Johan Blejk",
+    "pol" : "muski",
+    "sport" : "atletika",
+    "nacionalnost" : "Jamajka",
+    "gold" : 2,
+    "silver" : 2,
+    "bronze" : 2,
+    "rezultat" : ""
+}{
+    "_id" : ObjectId("61409b2382f2735810fced90"),
+    "discipline" : [ 
+        "100m trcanje", 
+        "200m trcanje", 
+        "400m trcanje", 
+        "800m trcanje", 
+        "maraton"
+    ],
+    "imeprezime" : "Josihide Kiriu",
+    "pol" : "muski",
+    "sport" : "atletika",
+    "nacionalnost" : "Japan",
+    "gold" : 0,
+    "silver" : 2,
+    "bronze" : 1,
+    "rezultat" : ""
+}{
+    "_id" : ObjectId("614213f17ec6ac37f820b59d"),
+    "discipline" : [ 
+        "100m trcanje", 
+        "200m trcanje", 
+        "400m trcanje", 
+        "skok u vis", 
+        "maraton"
+    ],
+    "imeprezime" : "Trejvon Bromel",
+    "pol" : "muski",
+    "sport" : "atletika",
+    "nacionalnost" : "SAD",
+    "gold" : 1,
+    "silver" : 2,
+    "bronze" : 1,
+    "rezultat" : ""
+}{
+    "_id" : ObjectId("614229d6772c316130595237"),
+    "discipline" : [ 
+        "singl"
+    ],
+    "imeprezime" : "Kei Nisikori",
+    "pol" : "muski",
+    "sport" : "tenis",
+    "nacionalnost" : "Japan",
+    "gold" : 1,
+    "silver" : 0,
+    "bronze" : 0,
+    "rezultat" : ""
+}{
+    "_id" : ObjectId("61422a59772c316130595238"),
+    "discipline" : [ 
+        "singl"
+    ],
+    "imeprezime" : "Dzon Izner",
+    "pol" : "muski",
+    "sport" : "tenis",
+    "nacionalnost" : "SAD",
+    "gold" : 0,
+    "silver" : 1,
+    "bronze" : 5,
+    "rezultat" : "15"
+}{
+    "_id" : ObjectId("61422a6f772c316130595239"),
+    "discipline" : [ 
+        "singl"
+    ],
+    "imeprezime" : "Endi Rodik",
+    "pol" : "muski",
+    "sport" : "tenis",
+    "nacionalnost" : "SAD",
+    "gold" : 0,
+    "silver" : 0,
+    "bronze" : 0,
+    "rezultat" : "13"
+}{
+    "_id" : ObjectId("61422b5b772c31613059523b"),
+    "discipline" : [ 
+        "singl", 
+        "dubl"
+    ],
+    "imeprezime" : "Dzenson Bruksbi",
+    "pol" : "muski",
+    "sport" : "tenis",
+    "nacionalnost" : "SAD",
+    "gold" : 0,
+    "silver" : 3,
+    "bronze" : 0,
+    "rezultat" : "10"
+}{
+    "_id" : ObjectId("6142353a10fc505da0da7f8b"),
+    "discipline" : [ 
+        "singl", 
+        "dubl"
+    ],
+    "imeprezime" : "Serena Vilijams",
+    "pol" : "zenski",
+    "sport" : "tenis",
+    "nacionalnost" : "SAD",
+    "gold" : 1,
+    "silver" : 0,
+    "bronze" : 0,
+    "rezultat" : "1"
+}{
+    "_id" : ObjectId("6142354310fc505da0da7f8c"),
+    "discipline" : [ 
+        "singl", 
+        "dubl"
+    ],
+    "imeprezime" : "Venus Vilijams",
+    "pol" : "zenski",
+    "sport" : "tenis",
+    "nacionalnost" : "SAD",
+    "gold" : 0,
+    "silver" : 0,
+    "bronze" : 0,
+    "rezultat" : "10"
+}{
+    "_id" : ObjectId("6142359710fc505da0da7f8e"),
+    "discipline" : [ 
+        "singl", 
+        "dubl"
+    ],
+    "imeprezime" : "Nina Stojanovic",
+    "pol" : "zenski",
+    "sport" : "tenis",
+    "nacionalnost" : "Srbija",
+    "gold" : 0,
+    "silver" : 0,
+    "bronze" : 0,
+    "rezultat" : "23"
+}{
+    "_id" : ObjectId("614252742a56ab25b4afc4d1"),
+    "discipline" : [ 
+        "10m vazdusni pistolj", 
+        "10m vazdusna puska", 
+        "50m trostav"
+    ],
+    "imeprezime" : "Zorana Arunovic",
+    "pol" : "zenski",
+    "sport" : "streljastvo",
+    "nacionalnost" : "Srbija",
+    "gold" : 0,
+    "silver" : 2,
+    "bronze" : 1,
+    "rezultat" : ""
+}{
+    "_id" : ObjectId("61433949af775b02fc16fc09"),
+    "discipline" : [ 
+        "singl", 
+        "dubl"
+    ],
+    "imeprezime" : "Endi Marej",
+    "pol" : "muski",
+    "sport" : "tenis",
+    "nacionalnost" : "Velika Britanija",
+    "gold" : 0,
+    "silver" : 1,
+    "bronze" : 0,
+    "rezultat" : "30"
+}{
+    "_id" : ObjectId("61433969af775b02fc16fc0a"),
+    "discipline" : [ 
+        "singl", 
+        "dubl"
+    ],
+    "imeprezime" : "Den Evans",
+    "pol" : "muski",
+    "sport" : "tenis",
+    "nacionalnost" : "Velika Britanija",
+    "gold" : 0,
+    "silver" : 0,
+    "bronze" : 1,
+    "rezultat" : "39"
+}{
+    "_id" : ObjectId("6143399caf775b02fc16fc0b"),
+    "discipline" : [ 
+        "singl", 
+        "dubl"
+    ],
+    "imeprezime" : "Gael Monfils",
+    "pol" : "muski",
+    "sport" : "tenis",
+    "nacionalnost" : "Francuska",
+    "gold" : 0,
+    "silver" : 0,
+    "bronze" : 0,
+    "rezultat" : ""
+}{
+    "_id" : ObjectId("614339e9af775b02fc16fc0c"),
+    "discipline" : [ 
+        "singl", 
+        "dubl"
+    ],
+    "imeprezime" : "Dzo Vilfrid Tsonga",
+    "pol" : "muski",
+    "sport" : "tenis",
+    "nacionalnost" : "Francuska",
+    "gold" : 0,
+    "silver" : 0,
+    "bronze" : 0,
+    "rezultat" : ""
+}{
+    "_id" : ObjectId("61433a24af775b02fc16fc0d"),
+    "discipline" : [ 
+        "singl", 
+        "dubl"
+    ],
+    "imeprezime" : "Dusan Lajovic",
+    "pol" : "muski",
+    "sport" : "tenis",
+    "nacionalnost" : "Srbija",
+    "gold" : 0,
+    "silver" : 1,
+    "bronze" : 1,
+    "rezultat" : ""
+}{
+    "_id" : ObjectId("614364653ca13037d806e173"),
+    "discipline" : [ 
+        "singl", 
+        "dubl"
+    ],
+    "imeprezime" : "Misaki Doi",
+    "pol" : "zenski",
+    "sport" : "tenis",
+    "nacionalnost" : "Japan",
+    "gold" : 0,
+    "silver" : 0,
+    "bronze" : 1,
+    "rezultat" : "40",
+    "__v" : 0
+}{
+    "_id" : ObjectId("614384ca3a329753d0ade4bf"),
+    "discipline" : [ 
+        "100m trcanje", 
+        "200m trcanje"
+    ],
+    "imeprezime" : "Ivana Spanovic",
+    "pol" : "zenski",
+    "sport" : "atletika",
+    "nacionalnost" : "Srbija",
+    "gold" : 0,
+    "silver" : 0,
+    "bronze" : 0,
+    "rezultat" : "",
+    "__v" : 0
+}{
+    "_id" : ObjectId("6144b3e08c413f1870017b0a"),
+    "discipline" : [ 
+        "10m vazdusna puska", 
+        "25m malokalib. pistolj", 
+        "10m vazdusni pistolj"
+    ],
+    "imeprezime" : "Amber Inglis",
+    "pol" : "zenski",
+    "sport" : "streljastvo",
+    "nacionalnost" : "SAD",
+    "gold" : 2,
+    "silver" : 1,
+    "bronze" : 0,
+    "rezultat" : "",
+    "__v" : 0
+}{
+    "_id" : ObjectId("6144b43c8c413f1870017b0b"),
+    "discipline" : [ 
+        "50m trostav", 
+        "10m vazdusna puska", 
+        "25m malokalib. pistolj", 
+        "10m vazdusni pistolj"
+    ],
+    "imeprezime" : "Selin Gobervil",
+    "pol" : "zenski",
+    "sport" : "streljastvo",
+    "nacionalnost" : "Francuska",
+    "gold" : 1,
+    "silver" : 0,
+    "bronze" : 2,
+    "rezultat" : "",
+    "__v" : 0
+}{
+    "_id" : ObjectId("614a0b4ef5b72d2940e35678"),
+    "discipline" : [ 
+        "100m trcanje"
+    ],
+    "imeprezime" : "Seli En Frejzer Prajs",
+    "pol" : "zenski",
+    "sport" : "atletika",
+    "nacionalnost" : "Jamajka",
+    "gold" : 0,
+    "silver" : 0,
+    "bronze" : 0,
+    "rezultat" : "",
+    "__v" : 0
+}{
+    "_id" : ObjectId("614f670588a9b03f7225ac07"),
+    "imeprezime" : "Maksim Gruse",
+    "pol" : "muski",
+    "sport" : "plivanje",
+    "discipline" : [ 
+        "100m leptir", 
+        "200m slobodno"
+    ],
+    "nacionalnost" : "Francuska",
+    "gold" : 0,
+    "silver" : 0,
+    "bronze" : 0,
+    "rezultat" : ""
+}{
+    "_id" : ObjectId("614f695bc8e66b64e4fb18ca"),
+    "discipline" : [ 
+        "100m leptir", 
+        "200m slobodno"
+    ],
+    "imeprezime" : "Medi Metela",
+    "pol" : "muski",
+    "sport" : "plivanje",
+    "nacionalnost" : "Francuska",
+    "gold" : 0,
+    "silver" : 0,
+    "bronze" : 0,
+    "rezultat" : "",
+    "__v" : 0
+}{
+    "_id" : ObjectId("614f6a40c8e66b64e4fb18cb"),
+    "discipline" : [ 
+        "100m leptir", 
+        "200m slobodno"
+    ],
+    "imeprezime" : "Gunar Benc",
+    "pol" : "muski",
+    "sport" : "plivanje",
+    "nacionalnost" : "SAD",
+    "gold" : 0,
+    "silver" : 0,
+    "bronze" : 0,
+    "rezultat" : "",
+    "__v" : 0
+}{
+    "_id" : ObjectId("614f6a4fc8e66b64e4fb18cc"),
+    "discipline" : [ 
+        "100m leptir", 
+        "200m slobodno"
+    ],
+    "imeprezime" : "Kejleb Dresel",
+    "pol" : "muski",
+    "sport" : "plivanje",
+    "nacionalnost" : "SAD",
+    "gold" : 2,
+    "silver" : 0,
+    "bronze" : 0,
+    "rezultat" : "",
+    "__v" : 0
+}{
+    "_id" : ObjectId("614f6adac8e66b64e4fb18cd"),
+    "discipline" : [ 
+        "100m leptir", 
+        "200m slobodno"
+    ],
+    "imeprezime" : "Tom Din",
+    "pol" : "muski",
+    "sport" : "plivanje",
+    "nacionalnost" : "Velika Britanija",
+    "gold" : 0,
+    "silver" : 0,
+    "bronze" : 1,
+    "rezultat" : "",
+    "__v" : 0
+}{
+    "_id" : ObjectId("614f6ae6c8e66b64e4fb18ce"),
+    "discipline" : [ 
+        "100m leptir", 
+        "200m slobodno"
+    ],
+    "imeprezime" : "Henri Tejlor",
+    "pol" : "muski",
+    "sport" : "plivanje",
+    "nacionalnost" : "Velika Britanija",
+    "gold" : 0,
+    "silver" : 0,
+    "bronze" : 0,
+    "rezultat" : "",
+    "__v" : 0
+}{
+    "_id" : ObjectId("614f6afec8e66b64e4fb18cf"),
+    "discipline" : [ 
+        "100m leptir", 
+        "200m slobodno"
+    ],
+    "imeprezime" : "Adam Piti",
+    "pol" : "muski",
+    "sport" : "plivanje",
+    "nacionalnost" : "Velika Britanija",
+    "gold" : 0,
+    "silver" : 0,
+    "bronze" : 0,
+    "rezultat" : "",
+    "__v" : 0
+}{
+    "_id" : ObjectId("614f6e51c8e66b64e4fb18d0"),
+    "discipline" : [ 
+        "drumska trka 225m"
+    ],
+    "imeprezime" : "Kris Hoj",
+    "pol" : "muski",
+    "sport" : "biciklizam",
+    "nacionalnost" : "Velika Britanija",
+    "gold" : 0,
+    "silver" : 1,
+    "bronze" : 0,
+    "rezultat" : "",
+    "__v" : 0
+}{
+    "_id" : ObjectId("614f6e61c8e66b64e4fb18d1"),
+    "discipline" : [ 
+        "drumska trka 225m"
+    ],
+    "imeprezime" : "Dzejson Keni",
+    "pol" : "muski",
+    "sport" : "biciklizam",
+    "nacionalnost" : "Velika Britanija",
+    "gold" : 0,
+    "silver" : 0,
+    "bronze" : 1,
+    "rezultat" : "",
+    "__v" : 0
+}{
+    "_id" : ObjectId("614f6efdc8e66b64e4fb18d2"),
+    "discipline" : [ 
+        "drumska trka 225m"
+    ],
+    "imeprezime" : "Tomas Pidkok",
+    "pol" : "muski",
+    "sport" : "biciklizam",
+    "nacionalnost" : "Velika Britanija",
+    "gold" : 0,
+    "silver" : 0,
+    "bronze" : 0,
+    "rezultat" : "",
+    "__v" : 0
+}{
+    "_id" : ObjectId("614f6f65c8e66b64e4fb18d3"),
+    "discipline" : [ 
+        "drumska trka 225m"
+    ],
+    "imeprezime" : "Loson Kredok",
+    "pol" : "muski",
+    "sport" : "biciklizam",
+    "nacionalnost" : "SAD",
+    "gold" : 0,
+    "silver" : 0,
+    "bronze" : 0,
+    "rezultat" : "",
+    "__v" : 0
+}{
+    "_id" : ObjectId("614f6f74c8e66b64e4fb18d4"),
+    "discipline" : [ 
+        "drumska trka 225m"
+    ],
+    "imeprezime" : "Brendon MekNalti",
+    "pol" : "muski",
+    "sport" : "biciklizam",
+    "nacionalnost" : "SAD",
+    "gold" : 1,
+    "silver" : 0,
+    "bronze" : 0,
+    "rezultat" : "",
+    "__v" : 0
+}{
+    "_id" : ObjectId("614f6f91c8e66b64e4fb18d5"),
+    "discipline" : [ 
+        "drumska trka 225m"
+    ],
+    "imeprezime" : "Konor Filds",
+    "pol" : "muski",
+    "sport" : "biciklizam",
+    "nacionalnost" : "SAD",
+    "gold" : 0,
+    "silver" : 0,
+    "bronze" : 0,
+    "rezultat" : "",
+    "__v" : 0
+}{
+    "_id" : ObjectId("614f6f9dc8e66b64e4fb18d6"),
+    "discipline" : [ 
+        "drumska trka 225m"
+    ],
+    "imeprezime" : "Korben Sara",
+    "pol" : "muski",
+    "sport" : "biciklizam",
+    "nacionalnost" : "SAD",
+    "gold" : 0,
+    "silver" : 0,
+    "bronze" : 0,
+    "rezultat" : "",
+    "__v" : 0
+}

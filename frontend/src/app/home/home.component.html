@@ -1,0 +1,205 @@
+<div class='font'>
+<div class='row'>
+<div class='col-sm-12'>
+<h1>Dobrodosli na zvanicni sajt Olimpijskih igara!</h1>
+<h4 class='tekst'>Tokyo 2021</h4>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-6'>
+<h3 class='navigacija'>Pristupite kao prijavljeni korisnik:</h3>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-6'>
+<ul>
+  <li><a href="login">Login</a></li>
+  <li><a href="register">Register</a></li>
+</ul>
+</div>
+</div>
+<br>
+<div class='row'>
+<div class='col-sm-6'>
+<h2>Zemlje ucesnice Olimpijskih igara</h2>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-4'>
+<table>
+    <tr>
+        <th>Zastava</th>
+        <th>Zemlja</th>
+        <th>Broj sportista</th>
+    </tr>
+    <tr *ngFor='let c of allCountries'>
+        <td>
+            <img src='assets/{{c.name}}.png' class='homeimage'>
+        </td>
+        <td class='td3'>
+            {{c.name}}
+        </td>
+        <td class='td3'>
+            {{c.athletes}}
+        </td>
+    </tr>
+</table>
+</div>
+</div>
+
+<div class='row'>
+<div class='col-sm-6'>
+<h3>Osvojene olimpijske medalje</h3>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-12'>
+<table>
+    <tr>
+        <th>Rang</th>
+        <th>Zemlja</th>
+        <th>Zlato</th>
+        <th>Srebro</th>
+        <th>Bronza</th>
+        <th>Ukupno medalja</th>
+    </tr>
+    <tr *ngFor='let c of allCountries; index as i'>
+        <td>
+            {{i+1}}
+        </td>
+        <td>
+            {{c.name}}
+        </td>
+        <td>
+            {{c.gold}}
+        </td>
+        <td>
+            {{c.silver}}
+        </td>
+        <td>
+            {{c.bronze}}
+        </td>
+        <td>
+            {{c.total}}
+        </td>
+    </tr>
+</table>
+</div>
+</div>
+
+<div class='row'>
+<div class='col-sm-6'>
+<h3>Pretraga sportista koji ucestvuju na Olimpijadi</h3>
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-6'>
+<form>
+    <tr>
+    <td>Ime i prezime: </td> 
+    <td>
+    <input type="text" name='imeprezime' [(ngModel)]='imeprezime' placeholder="svi">
+    </td>
+</tr>
+<tr>
+    <td>Zemlja:</td>
+    <td>
+    <select id="nacionalnost"  name="nacionalnost" [(ngModel)]='nacionalnost'>
+        <option>sve</option>
+        <option *ngFor='let d of allCountries'>{{d.name}}</option>   
+    </select>
+    </td>
+</tr>
+<tr>
+    <td>
+    Sport:
+</td>
+<td>
+    <select id="sport"  name="sport" [(ngModel)]='sport'>
+        <option>svi</option>
+        <option *ngFor='let d of allSports'>{{d.ime}}</option>   
+    </select>
+</td>
+</tr>
+<tr>
+    <td>
+    Disciplina:
+</td>
+<td>
+    <select id="disciplina"  name="disciplina" [(ngModel)]='disciplina'>
+        <option>sve</option>
+        <option *ngFor='let d of allDisciplines'>{{d}}</option>   
+    </select>
+</td>
+</tr>
+<tr>
+    <td>
+    Pol:
+</td>
+<td>
+    <input type="radio" id="muski" name="pol" value="muski" [(ngModel)]='pol'
+         checked>
+     <label for="muski">muski</label>
+     <input type="radio" id="zenski" name="pol" value="zenski" [(ngModel)]='pol'>
+    <label for="zenski">zenski</label>
+</td>
+</tr>
+<tr>
+    <input type="checkbox" id="osvajaci" name="osvajaci" value="osvajaci" [(ngModel)]='osvajaci'>
+    <label for="osvajaci">samo osvajaci medalja</label>
+</tr>
+</form>
+<button (click)='Pretraga()'>Pretraga</button>
+</div>
+</div>
+
+<div class='row'>
+<div class='col-sm-6'>
+<h4>Broj prikaza po stranici:</h4>
+</div>
+</div> 
+<div class='row'>
+<div class='col-sm-6'>
+<select [(ngModel)]='itemsPerPage'>
+    <option value="20"  selected="selected">20</option>
+    <option value="50">50</option>
+    <option value="100">100</option>
+</select>
+</div>
+</div>
+
+<div class='row'>
+<div class='col-sm-12'>
+<table class='pretraga' style='border:none'>
+    <h3 *ngIf='queriedAthletes.length!=0'>Rezultati pretrage:</h3>
+    <tr *ngIf='queriedAthletes.length!=0'>
+        <th class='td3'>Ime i prezime</th>
+        <th class='td3'>Pol</th>
+        <th class='td3'>Sport</th>
+        <th class='td3'>Discipline</th>
+        <th class='td3'>Nacionalnost</th>
+    </tr>
+    <tr *ngFor="let qa of queriedAthletes | paginate: {itemsPerPage:itemsPerPage, currentPage: p};">
+        <td class='td3'>
+            {{qa.imeprezime}}
+        </td>
+        <td class='td3'>
+            {{qa.pol}}
+        </td>
+        <td class='td3'>
+            {{qa.sport}}
+        </td>
+        <td class='td3'>
+            {{qa.discipline}}
+        </td>
+        <td class='td3'>
+            {{qa.nacionalnost}}
+        </td>
+    </tr>
+    <pagination-controls (pageChange)="p = $event" ></pagination-controls>
+</table>
+</div>
+</div>
+</div>
+
+

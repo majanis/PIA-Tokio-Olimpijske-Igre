@@ -1,0 +1,28 @@
+.col-sm-3{
+    padding:2px;
+    align-items: center;
+}
+
+.col-sm-3 a:visited{
+    color:darkred;
+}
+
+.col-sm-3 a:hover{
+    font-weight:bold;
+    color:teal;
+}
+
+button{
+    background-color:black;
+    border:none;
+    color:palegoldenrod;
+    cursor:pointer;
+    }
+    
+    button:hover{
+        background-color: maroon;
+    }
+    
+    .font{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     }

@@ -1,0 +1,148 @@
+{
+    "_id" : ObjectId("613285ca4475c4ff3bcb2d98"),
+    "username" : "org",
+    "password" : "iamorg123",
+    "imeprezime" : "Organizator Olimpijade",
+    "nacionalnost" : "Japan",
+    "email" : "org.olymp@gmail.com",
+    "type" : "organizer"
+}{
+    "_id" : ObjectId("6132871e4475c4ff3bcb2dd0"),
+    "username" : "peraOlymp",
+    "password" : "pera123",
+    "imeprezime" : "Pera Peric",
+    "nacionalnost" : "Srbija",
+    "email" : "pera.peric@gmail.com",
+    "type" : "delegat"
+}{
+    "_id" : ObjectId("6132880d4475c4ff3bcb2ded"),
+    "username" : "zikaOlymp",
+    "password" : "zika123",
+    "imeprezime" : "Zika Zikic",
+    "nacionalnost" : "Srbija",
+    "email" : "zika.zikic@gmail.com",
+    "type" : "vodja"
+}{
+    "_id" : ObjectId("6133d1280f96d43750de55c8"),
+    "username" : "majan",
+    "password" : "majan99",
+    "imeprezime" : "Maja Nisevic",
+    "nacionalnost" : "Srbija",
+    "email" : "majan@yahoo.com",
+    "type" : "delegat"
+}{
+    "_id" : ObjectId("61361b13eb5a305668ae8b95"),
+    "username" : "SvetlanaN",
+    "password" : "blabla",
+    "imeprezime" : "Svetlana Nisevic",
+    "nacionalnost" : "SAD",
+    "email" : "sv@gmail,com",
+    "type" : "delegat"
+}{
+    "_id" : ObjectId("61361b16eb5a305668ae8b96"),
+    "username" : "Rade123",
+    "password" : "radovan",
+    "imeprezime" : "Rade Nisevic",
+    "nacionalnost" : "Japan",
+    "email" : "rade@gmail.com",
+    "type" : "delegat"
+}{
+    "_id" : ObjectId("613f5b70ac341e2d106984af"),
+    "username" : "nekitamo",
+    "password" : "Nekitamooo",
+    "imeprezime" : "Neki Tamo",
+    "nacionalnost" : "Japan",
+    "email" : "neki@gmail.com",
+    "type" : "delegat",
+    "__v" : 0
+}{
+    "_id" : ObjectId("6140988482f2735810fced88"),
+    "username" : "japanskivodja",
+    "password" : "Mmmm123#!",
+    "imeprezime" : "Japanski Vodja",
+    "nacionalnost" : "Japan",
+    "email" : "japan@gmail.com",
+    "type" : "vodja",
+    "__v" : 0
+}{
+    "_id" : ObjectId("6140988782f2735810fced89"),
+    "username" : "americkivodja",
+    "password" : "aAbcc123#!",
+    "imeprezime" : "Americki Vodja",
+    "nacionalnost" : "SAD",
+    "email" : "usa@gmail.com",
+    "type" : "vodja",
+    "__v" : 0
+}{
+    "_id" : ObjectId("61409a4182f2735810fced8c"),
+    "username" : "JamajkaV",
+    "password" : "JamajkaV",
+    "imeprezime" : "Jamajka Vodja",
+    "nacionalnost" : "Jamajka",
+    "email" : "jamajka@gmail.com",
+    "type" : "vodja",
+    "__v" : 0
+}{
+    "_id" : ObjectId("6140a7704bc80826500af664"),
+    "username" : "Micko",
+    "password" : "micko123",
+    "imeprezime" : "Miodrag Nisevic",
+    "nacionalnost" : "Jamajka",
+    "email" : "micko@yahoo.com",
+    "type" : "delegat",
+    "__v" : 0
+}{
+    "_id" : ObjectId("6141fd782f43a76be855ee77"),
+    "username" : "Francuz1",
+    "password" : "francuz123",
+    "imeprezime" : "Francuz Frank",
+    "nacionalnost" : "Francuska",
+    "email" : "franc@gmail.com",
+    "type" : "delegat",
+    "__v" : 0
+}{
+    "_id" : ObjectId("61424f5e44e6c467c08c6db9"),
+    "username" : "francuskivodja1",
+    "password" : "francuskivodja1",
+    "imeprezime" : "Francuz Vodja",
+    "nacionalnost" : "Francuska",
+    "email" : "francuz@gmail.com",
+    "type" : "vodja",
+    "__v" : 0
+}{
+    "_id" : ObjectId("61433921af775b02fc16fc08"),
+    "username" : "vodjaBritanija",
+    "password" : "vodjaBritanija",
+    "imeprezime" : "Britanski Vodja",
+    "nacionalnost" : "Velika Britanija",
+    "email" : "vb@gmail.com",
+    "type" : "vodja",
+    "__v" : 0
+}{
+    "_id" : ObjectId("614c8e84757a4469487f7a9f"),
+    "username" : "Voldemor",
+    "password" : "Mmmm123#!",
+    "imeprezime" : "Voldi Vold",
+    "nacionalnost" : "Jamajka",
+    "email" : "vold@gmail.com",
+    "type" : "delegat",
+    "__v" : 0
+}{
+    "_id" : ObjectId("614e0aea8f9a7c5bcc8d28a7"),
+    "username" : "delegatJapana",
+    "password" : "Asdf1234!#",
+    "imeprezime" : "Delegat Japana",
+    "nacionalnost" : "Japan",
+    "email" : "delegat.japan@gmail.com",
+    "type" : "delegat",
+    "__v" : 0
+}{
+    "_id" : ObjectId("614e0b868f9a7c5bcc8d28a8"),
+    "username" : "Zika2",
+    "password" : "aAbb1234#!",
+    "imeprezime" : "zika z",
+    "nacionalnost" : "SAD",
+    "email" : "zzzz@gmail.com",
+    "type" : "delegat",
+    "__v" : 0
+}

@@ -1,0 +1,343 @@
+{
+    "_id" : ObjectId("6148ecd288a9b03f7224ef58"),
+    "godina" : "2008",
+    "mesto" : "Peking",
+    "takmicar" : "Usain Bolt",
+    "nacionalnost" : "Jamajka",
+    "vrednost" : "19,30",
+    "disciplina" : "200m trcanje",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149f06788a9b03f72250f47"),
+    "godina" : "2016",
+    "mesto" : "Rio de Zaneiro",
+    "takmicar" : "Vejd Van Nikerk",
+    "nacionalnost" : "Juznoafricka Republika",
+    "vrednost" : "43,03",
+    "disciplina" : "400m trcanje",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149f08288a9b03f72250f4f"),
+    "godina" : "2012",
+    "mesto" : "London",
+    "takmicar" : "Usain Bolt",
+    "nacionalnost" : "Jamajka",
+    "vrednost" : "9,63",
+    "disciplina" : "100m trcanje",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149f0eb88a9b03f72250f8e"),
+    "godina" : "2012",
+    "mesto" : "London",
+    "takmicar" : "Dejvid Rudisa",
+    "nacionalnost" : "Kenija",
+    "vrednost" : "1:40,91",
+    "disciplina" : "800m trcanje",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149f12988a9b03f72250fa8"),
+    "godina" : "1996",
+    "mesto" : "Sidnej",
+    "takmicar" : "Noa Ngeni",
+    "nacionalnost" : "Kenija",
+    "vrednost" : "3:32,07",
+    "disciplina" : "1500m trcanje",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149f2f888a9b03f7225107c"),
+    "godina" : "2008",
+    "mesto" : "Peking",
+    "takmicar" : "Kenenisa Bekele",
+    "nacionalnost" : "Etiopija",
+    "vrednost" : "12:57,82",
+    "disciplina" : "5000m trcanje",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149f32688a9b03f72251094"),
+    "godina" : "2008",
+    "mesto" : "Peking",
+    "takmicar" : "Kenenisa Bekele",
+    "nacionalnost" : "Etiopija",
+    "vrednost" : "27:01,17",
+    "disciplina" : "10000m trcanje",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149f37f88a9b03f722510b5"),
+    "godina" : "2008",
+    "mesto" : "Peking",
+    "takmicar" : "Samjuel Kamau Vanjiru",
+    "nacionalnost" : "Kenija",
+    "vrednost" : "2:06,32",
+    "disciplina" : "maraton",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149f3cf88a9b03f722510dc"),
+    "godina" : "1996",
+    "mesto" : "Atlanta",
+    "takmicar" : "Carls Ostin",
+    "nacionalnost" : "SAD",
+    "vrednost" : "2,39",
+    "disciplina" : "skok u vis",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149f41e88a9b03f72251109"),
+    "godina" : "2016",
+    "mesto" : "Rio de Zaneiro",
+    "takmicar" : "Tijago Braz de Silva",
+    "nacionalnost" : "Brazil",
+    "vrednost" : "6,03",
+    "disciplina" : "skok s motkom",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149f62c88a9b03f722511c2"),
+    "godina" : "1968",
+    "mesto" : "Meksiko Siti",
+    "takmicar" : "Bob Bimon",
+    "nacionalnost" : "SAD",
+    "vrednost" : "8,90",
+    "disciplina" : "skok u dalj",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149f67888a9b03f722511e0"),
+    "godina" : "1996",
+    "mesto" : "Atlanta",
+    "takmicar" : "Keni Harison",
+    "nacionalnost" : "SAD",
+    "vrednost" : "18,09",
+    "disciplina" : "troskok",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149f6b688a9b03f722511f7"),
+    "godina" : "1988",
+    "mesto" : "Seul",
+    "takmicar" : "Ulf Timerman",
+    "nacionalnost" : "Istocna Nemacka",
+    "vrednost" : "22,47",
+    "disciplina" : "bacanje kugle",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149f70088a9b03f7225120f"),
+    "godina" : "2004",
+    "mesto" : "Atina",
+    "takmicar" : "Virgilijus Arekna",
+    "nacionalnost" : "Litvanija",
+    "vrednost" : "69,89",
+    "disciplina" : "bacanje diska",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149f74088a9b03f72251228"),
+    "godina" : "1988",
+    "mesto" : "Seul",
+    "takmicar" : "Sergej Litvinov",
+    "nacionalnost" : "Sovjetski Savez",
+    "vrednost" : "84,80",
+    "disciplina" : "bacanje kladiva",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149f78488a9b03f72251248"),
+    "godina" : "2004",
+    "mesto" : "Peking",
+    "takmicar" : "Andreas Torkildsen",
+    "nacionalnost" : "Norveska",
+    "vrednost" : "90,57",
+    "disciplina" : "bacanje koplja",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149f7cf88a9b03f72251261"),
+    "godina" : "2012",
+    "mesto" : "London",
+    "takmicar" : "Cen Ding",
+    "nacionalnost" : "Kina",
+    "vrednost" : "1:18,46",
+    "disciplina" : "20km brzo hodanje",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149f80088a9b03f72251272"),
+    "godina" : "2012",
+    "mesto" : "London",
+    "takmicar" : "Sergej Kirdjapkin",
+    "nacionalnost" : "Rusija",
+    "vrednost" : "3:35,59",
+    "disciplina" : "50km brzo hodanje",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149f84e88a9b03f7225129d"),
+    "godina" : "1988",
+    "mesto" : "Seul",
+    "takmicar" : "Florens Grifit Dzojner",
+    "nacionalnost" : "SAD",
+    "vrednost" : "10,62",
+    "disciplina" : "100m trcanje",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149f87088a9b03f722512a7"),
+    "godina" : "1988",
+    "mesto" : "Seul",
+    "takmicar" : "Florens Grifit Dzojner",
+    "nacionalnost" : "SAD",
+    "vrednost" : "21,34",
+    "disciplina" : "200m trcanje",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149f8a688a9b03f722512b8"),
+    "godina" : "1996",
+    "mesto" : "Atlanta",
+    "takmicar" : "Mari-Zoze Perek",
+    "nacionalnost" : "Francuska",
+    "vrednost" : "48,25",
+    "disciplina" : "400m trcanje",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149f8e488a9b03f722512cc"),
+    "godina" : "1980",
+    "mesto" : "Moskva",
+    "takmicar" : "Nadezda Olizarenko",
+    "nacionalnost" : "Sovjetski Savez",
+    "vrednost" : "1:53,43",
+    "disciplina" : "800m trcanje",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149f93188a9b03f722512e2"),
+    "godina" : "2016",
+    "mesto" : "Rio de Zaneiro",
+    "takmicar" : "Vivijen Ceriot",
+    "nacionalnost" : "Kenija",
+    "vrednost" : "14:26,17",
+    "disciplina" : "5000m trcanje",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149f97088a9b03f722512fa"),
+    "godina" : "2016",
+    "mesto" : "Rio de Zaneiro",
+    "takmicar" : "Almaz Ajana",
+    "nacionalnost" : "Etiopija",
+    "vrednost" : "29:17,45",
+    "disciplina" : "10000m trcanje",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149f9bf88a9b03f72251315"),
+    "godina" : "2012",
+    "mesto" : "London",
+    "takmicar" : "Tiki Gelana",
+    "nacionalnost" : "Etiopija",
+    "vrednost" : "2:23,07",
+    "disciplina" : "maraton",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149fa0588a9b03f72251329"),
+    "godina" : "2008",
+    "mesto" : "Peking",
+    "takmicar" : "Jelena Slesarenko",
+    "nacionalnost" : "Rusija",
+    "vrednost" : "2,06",
+    "disciplina" : "skok u vis",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149fa3488a9b03f7225133a"),
+    "godina" : "2008",
+    "mesto" : "Peking",
+    "takmicar" : "Jelena Isinbajeva",
+    "nacionalnost" : "Rusija",
+    "vrednost" : "4,91",
+    "disciplina" : "skok s motkom",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149fa6388a9b03f72251348"),
+    "godina" : "1988",
+    "mesto" : "Seul",
+    "takmicar" : "Dzeki Dzojner Kersi",
+    "nacionalnost" : "SAD",
+    "vrednost" : "7,40",
+    "disciplina" : "skok u dalj",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149faa388a9b03f72251362"),
+    "godina" : "2008",
+    "mesto" : "Peking",
+    "takmicar" : "Fransoaz Mobango Etone",
+    "nacionalnost" : "Kambodza",
+    "vrednost" : "15,39",
+    "disciplina" : "troskok",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149faeb88a9b03f72251382"),
+    "godina" : "1980",
+    "mesto" : "Moskva",
+    "takmicar" : "Ilona Slupijanek",
+    "nacionalnost" : "Istocna Nemacka",
+    "vrednost" : "22,41",
+    "disciplina" : "bacanje kugle",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149fb2688a9b03f72251396"),
+    "godina" : "1988",
+    "mesto" : "Seul",
+    "takmicar" : "Martina Helman",
+    "nacionalnost" : "Istocna Nemacka",
+    "vrednost" : "72,30",
+    "disciplina" : "bacanje diska",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149fb5d88a9b03f722513a8"),
+    "godina" : "2016",
+    "mesto" : "Rio de Zaneiro",
+    "takmicar" : "Anita Vlodarcik",
+    "nacionalnost" : "Rusija",
+    "vrednost" : "82,29",
+    "disciplina" : "bacanje kladiva",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149fba988a9b03f722513be"),
+    "godina" : "2004",
+    "mesto" : "Atina",
+    "takmicar" : "Osleidis Menendes",
+    "nacionalnost" : "Kuba",
+    "vrednost" : "71,53",
+    "disciplina" : "bacanje koplja",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149fbe088a9b03f722513d5"),
+    "godina" : "2012",
+    "mesto" : "London",
+    "takmicar" : "Jelena Lasmanova",
+    "nacionalnost" : "Rusija",
+    "vrednost" : "1:25,02",
+    "disciplina" : "20km brzo hodanje",
+    "sport" : "atletika"
+}{
+    "_id" : ObjectId("6149fc4488a9b03f722513f0"),
+    "godina" : "2008",
+    "mesto" : "Peking",
+    "takmicar" : "Majkl Felps",
+    "nacionalnost" : "SAD",
+    "vrednost" : "1:42,96",
+    "disciplina" : "200m slobodno",
+    "sport" : "plivanje"
+}{
+    "_id" : ObjectId("6149fc9788a9b03f7225140c"),
+    "godina" : "2020",
+    "mesto" : "Tokio",
+    "takmicar" : "Kejleb Dresel",
+    "nacionalnost" : "SAD",
+    "vrednost" : "49,45",
+    "disciplina" : "100m leptir",
+    "sport" : "plivanje"
+}{
+    "_id" : ObjectId("6149fce888a9b03f7225142e"),
+    "godina" : "2016",
+    "mesto" : "Rio de Zaneiro",
+    "takmicar" : "Sara Sjostrom",
+    "nacionalnost" : "Svedska",
+    "vrednost" : "55,48",
+    "disciplina" : "100m leptir",
+    "sport" : "plivanje"
+}{
+    "_id" : ObjectId("6149fd3088a9b03f72251449"),
+    "godina" : "2012",
+    "mesto" : "London",
+    "takmicar" : "Alison Smit",
+    "nacionalnost" : "SAD",
+    "vrednost" : "1:53,61",
+    "disciplina" : "200m slobodno",
+    "sport" : "plivanje"
+}

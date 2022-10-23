@@ -1,0 +1,10 @@
+{
+    "_id" : ObjectId("61504f96c8e66b64e4fb18de"),
+    "username" : "myUser",
+    "password" : "Mmmm123!#",
+    "imeprezime" : "my user",
+    "nacionalnost" : "Srbija",
+    "email" : "ja@gmail.com",
+    "type" : "delegat",
+    "__v" : 0
+}

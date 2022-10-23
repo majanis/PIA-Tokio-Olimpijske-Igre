@@ -1,0 +1,1633 @@
+{
+    "_id" : ObjectId("613cb1124475c4ff3bcc15e4"),
+    "sport" : "atletika",
+    "disciplina" : "100m trcanje",
+    "pol" : "zenski",
+    "vrsta" : "individualni",
+    "pocetak" : "2021-08-08T12:00:00.000Z",
+    "kraj" : "2021-08-08T12:00:00.000Z",
+    "lokacija" : "atletski stadion",
+    "delegat" : [ 
+        "Voldi Vold"
+    ],
+    "takmicari" : [],
+    "prijavljeni" : [ 
+        {
+            "discipline" : [ 
+                "100m trcanje"
+            ],
+            "_id" : "614a0b4ef5b72d2940e35678",
+            "imeprezime" : "Seli En Frejzer Prajs",
+            "pol" : "zenski",
+            "sport" : "atletika",
+            "nacionalnost" : "Jamajka",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0,
+            "rezultat" : "",
+            "__v" : 0
+        }
+    ],
+    "pobednik" : "",
+    "format" : "Smatrati da je broj takmičara u finalnoj trci tačno 8.Vreme kod trka se unosi kao: SS,TT (gde su TT stotinke)",
+    "brojTakmicaraMin" : 8,
+    "brojTakmicaraMax" : 8,
+    "drugi" : "",
+    "treci" : "",
+    "potvrdjeno" : false,
+    "zavrseno" : false
+}{
+    "_id" : ObjectId("613cb1214475c4ff3bcc15ed"),
+    "sport" : "atletika",
+    "disciplina" : "100m trcanje",
+    "pol" : "muski",
+    "vrsta" : "individualni",
+    "pocetak" : "2021-08-08T12:00:00.000Z",
+    "kraj" : "2021-08-08T12:00:00.000Z",
+    "lokacija" : "atletski stadion",
+    "delegat" : [ 
+        "Pera Peric"
+    ],
+    "takmicari" : [ 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "skok u vis", 
+                "800m trcanje"
+            ],
+            "_id" : "61409a6382f2735810fced8d",
+            "imeprezime" : "Usain Bolt",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "Jamajka",
+            "gold" : 5,
+            "silver" : 1,
+            "bronze" : 0,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "skok u vis", 
+                "800m trcanje"
+            ],
+            "_id" : "61409aa182f2735810fced8e",
+            "imeprezime" : "Asafa Pauel",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "Jamajka",
+            "gold" : 0,
+            "silver" : 1,
+            "bronze" : 2,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "skok u vis", 
+                "800m trcanje"
+            ],
+            "_id" : "61409aaf82f2735810fced8f",
+            "imeprezime" : "Johan Blejk",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "Jamajka",
+            "gold" : 1,
+            "silver" : 1,
+            "bronze" : 1,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "800m trcanje", 
+                "skok u vis"
+            ],
+            "_id" : "6140972480304d1a8f7aedd6",
+            "imeprezime" : "Dzastin Gatlin",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "SAD",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "800m trcanje", 
+                "skok u vis"
+            ],
+            "_id" : "613e52d94475c4ff3bcc5b05",
+            "imeprezime" : "Son Kroford",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "SAD",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "800m trcanje", 
+                "skok u vis"
+            ],
+            "_id" : "613e52b94475c4ff3bcc5af7",
+            "imeprezime" : "Noa Lajls",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "SAD",
+            "gold" : 0,
+            "silver" : 2,
+            "bronze" : 1,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "skok u vis"
+            ],
+            "_id" : "614213f17ec6ac37f820b59d",
+            "imeprezime" : "Trejvon Bromel",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "SAD",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 1,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "skok u vis"
+            ],
+            "_id" : "6140993982f2735810fced8a",
+            "imeprezime" : "Riota Jamagata",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "Japan",
+            "gold" : 1,
+            "silver" : 0,
+            "bronze" : 0,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje"
+            ],
+            "_id" : "61409b2382f2735810fced90",
+            "imeprezime" : "Josihide Kiriu",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "Japan",
+            "gold" : 0,
+            "silver" : 2,
+            "bronze" : 0,
+            "rezultat" : ""
+        }
+    ],
+    "prijavljeni" : [],
+    "pobednik" : "Usain Bolt",
+    "format" : "Smatrati da je broj takmičara u finalnoj trci tačno 8.Vreme kod trka se unosi kao: SS,TT (gde su TT stotinke)",
+    "brojTakmicaraMin" : 8,
+    "brojTakmicaraMax" : 8,
+    "drugi" : "Trejvon Bromel",
+    "treci" : "Riota Jamagata",
+    "potvrdjeno" : true,
+    "zavrseno" : true
+}{
+    "_id" : ObjectId("613cb1504475c4ff3bcc160c"),
+    "sport" : "atletika",
+    "disciplina" : "200m trcanje",
+    "pol" : "zenski",
+    "vrsta" : "individualni",
+    "pocetak" : "2021-08-02T12:00:00.000Z",
+    "kraj" : "2021-08-02T12:00:00.000Z",
+    "lokacija" : "atletski stadion",
+    "delegat" : [],
+    "takmicari" : [],
+    "prijavljeni" : [ 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje"
+            ],
+            "_id" : "614384ca3a329753d0ade4bf",
+            "imeprezime" : "Ivana Spanovic",
+            "pol" : "zenski",
+            "sport" : "atletika",
+            "nacionalnost" : "Srbija",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0,
+            "rezultat" : "",
+            "__v" : 0
+        }
+    ],
+    "pobednik" : "",
+    "format" : "Smatrati da je broj takmičara u finalnoj trci tačno 8.Vreme kod trka se unosi kao: SS,TT (gde su TT stotinke)",
+    "brojTakmicaraMin" : 8,
+    "brojTakmicaraMax" : 8,
+    "drugi" : "",
+    "treci" : "",
+    "potvrdjeno" : false,
+    "zavrseno" : false
+}{
+    "_id" : ObjectId("613cb1604475c4ff3bcc1614"),
+    "sport" : "atletika",
+    "disciplina" : "200m trcanje",
+    "pol" : "muski",
+    "vrsta" : "individualni",
+    "pocetak" : "2021-08-10T12:00:00.000Z",
+    "kraj" : "2021-08-11T12:00:00.000Z",
+    "lokacija" : "atletski stadion",
+    "delegat" : [ 
+        "Maja Nisevic"
+    ],
+    "takmicari" : [ 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "800m trcanje", 
+                "skok u vis"
+            ],
+            "_id" : "613e52b94475c4ff3bcc5af7",
+            "imeprezime" : "Noa Lajls",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "SAD",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0
+        }
+    ],
+    "prijavljeni" : [ 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "800m trcanje", 
+                "skok u vis"
+            ],
+            "_id" : "613e52d94475c4ff3bcc5b05",
+            "imeprezime" : "Son Kroford",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "SAD",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "800m trcanje", 
+                "skok u vis"
+            ],
+            "_id" : "6140972480304d1a8f7aedd6",
+            "imeprezime" : "Dzastin Gatlin",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "SAD",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "skok u vis", 
+                "800m trcanje", 
+                "maraton"
+            ],
+            "_id" : "61409a6382f2735810fced8d",
+            "imeprezime" : "Usain Bolt",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "Jamajka",
+            "gold" : 8,
+            "silver" : 2,
+            "bronze" : 1,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "skok u vis", 
+                "800m trcanje", 
+                "maraton"
+            ],
+            "_id" : "61409aa182f2735810fced8e",
+            "imeprezime" : "Asafa Pauel",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "Jamajka",
+            "gold" : 0,
+            "silver" : 2,
+            "bronze" : 2,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "skok u vis", 
+                "800m trcanje", 
+                "maraton"
+            ],
+            "_id" : "61409aaf82f2735810fced8f",
+            "imeprezime" : "Johan Blejk",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "Jamajka",
+            "gold" : 2,
+            "silver" : 2,
+            "bronze" : 2,
+            "rezultat" : ""
+        }
+    ],
+    "pobednik" : "",
+    "format" : "Smatrati da je broj takmičara u finalnoj trci tačno 8.Vreme kod trka se unosi kao: SS,TT (gde su TT stotinke)",
+    "brojTakmicaraMin" : 8,
+    "brojTakmicaraMax" : 8,
+    "drugi" : "",
+    "treci" : "",
+    "potvrdjeno" : false,
+    "zavrseno" : false
+}{
+    "_id" : ObjectId("613cb1b34475c4ff3bcc1650"),
+    "sport" : "plivanje",
+    "disciplina" : "100m leptir",
+    "pol" : "muski",
+    "vrsta" : "individualni",
+    "pocetak" : "2021-08-08T10:00:00.000Z",
+    "kraj" : "2021-08-08T13:00:00.000Z",
+    "lokacija" : "bazen",
+    "delegat" : [ 
+        "Francuz Frank"
+    ],
+    "takmicari" : [ 
+        {
+            "discipline" : [ 
+                "100m leptir", 
+                "200m slobodno"
+            ],
+            "_id" : "613e11f44475c4ff3bcc3deb",
+            "imeprezime" : "Milorad Cavic",
+            "pol" : "muski",
+            "sport" : "plivanje",
+            "nacionalnost" : "Srbija",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0
+        }, 
+        {
+            "discipline" : [ 
+                "100m leptir"
+            ],
+            "_id" : "613e123f4475c4ff3bcc3e30",
+            "imeprezime" : "Caba Siladji",
+            "pol" : "muski",
+            "sport" : "plivanje",
+            "nacionalnost" : "Srbija",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0
+        }, 
+        {
+            "discipline" : [ 
+                "100m leptir", 
+                "200m slobodno"
+            ],
+            "_id" : "614f670588a9b03f7225ac07",
+            "imeprezime" : "Maksim Gruse",
+            "pol" : "muski",
+            "sport" : "plivanje",
+            "nacionalnost" : "Francuska",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m leptir", 
+                "200m slobodno"
+            ],
+            "_id" : "614f695bc8e66b64e4fb18ca",
+            "imeprezime" : "Medi Metela",
+            "pol" : "muski",
+            "sport" : "plivanje",
+            "nacionalnost" : "Francuska",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0,
+            "rezultat" : "",
+            "__v" : 0
+        }, 
+        {
+            "discipline" : [ 
+                "100m leptir", 
+                "200m slobodno"
+            ],
+            "_id" : "613e13f84475c4ff3bcc3f4a",
+            "imeprezime" : "Majkl Felps",
+            "pol" : "muski",
+            "sport" : "plivanje",
+            "nacionalnost" : "SAD",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m leptir", 
+                "200m slobodno"
+            ],
+            "_id" : "614f6a40c8e66b64e4fb18cb",
+            "imeprezime" : "Gunar Benc",
+            "pol" : "muski",
+            "sport" : "plivanje",
+            "nacionalnost" : "SAD",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0,
+            "rezultat" : "",
+            "__v" : 0
+        }, 
+        {
+            "discipline" : [ 
+                "100m leptir", 
+                "200m slobodno"
+            ],
+            "_id" : "614f6a4fc8e66b64e4fb18cc",
+            "imeprezime" : "Kejleb Dresel",
+            "pol" : "muski",
+            "sport" : "plivanje",
+            "nacionalnost" : "SAD",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0,
+            "rezultat" : "",
+            "__v" : 0
+        }, 
+        {
+            "discipline" : [ 
+                "100m leptir", 
+                "200m slobodno"
+            ],
+            "_id" : "614f6adac8e66b64e4fb18cd",
+            "imeprezime" : "Tom Din",
+            "pol" : "muski",
+            "sport" : "plivanje",
+            "nacionalnost" : "Velika Britanija",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0,
+            "rezultat" : "",
+            "__v" : 0
+        }, 
+        {
+            "discipline" : [ 
+                "100m leptir", 
+                "200m slobodno"
+            ],
+            "_id" : "614f6ae6c8e66b64e4fb18ce",
+            "imeprezime" : "Henri Tejlor",
+            "pol" : "muski",
+            "sport" : "plivanje",
+            "nacionalnost" : "Velika Britanija",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0,
+            "rezultat" : "",
+            "__v" : 0
+        }, 
+        {
+            "discipline" : [ 
+                "100m leptir", 
+                "200m slobodno"
+            ],
+            "_id" : "614f6afec8e66b64e4fb18cf",
+            "imeprezime" : "Adam Piti",
+            "pol" : "muski",
+            "sport" : "plivanje",
+            "nacionalnost" : "Velika Britanija",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0,
+            "rezultat" : "",
+            "__v" : 0
+        }
+    ],
+    "prijavljeni" : [],
+    "pobednik" : "Kejleb Dresel",
+    "format" : "Smatrati da je broj takmičara u finalnoj trci tačno 8.Vreme kod trka se unosi kao: SS,TT (gde su TT stotinke)",
+    "brojTakmicaraMin" : 8,
+    "brojTakmicaraMax" : 8,
+    "drugi" : "Majkl Felps",
+    "treci" : "Tom Din",
+    "potvrdjeno" : true,
+    "zavrseno" : true
+}{
+    "_id" : ObjectId("613f6aaf29981a6f2ce6c02d"),
+    "delegat" : [ 
+        "Pera Peric"
+    ],
+    "takmicari" : [ 
+        {
+            "discipline" : [ 
+                "drumska trka 225m"
+            ],
+            "_id" : "614f6e51c8e66b64e4fb18d0",
+            "imeprezime" : "Kris Hoj",
+            "pol" : "muski",
+            "sport" : "biciklizam",
+            "nacionalnost" : "Velika Britanija",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0,
+            "rezultat" : "",
+            "__v" : 0
+        }, 
+        {
+            "discipline" : [ 
+                "drumska trka 225m"
+            ],
+            "_id" : "614f6e61c8e66b64e4fb18d1",
+            "imeprezime" : "Dzejson Keni",
+            "pol" : "muski",
+            "sport" : "biciklizam",
+            "nacionalnost" : "Velika Britanija",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0,
+            "rezultat" : "",
+            "__v" : 0
+        }, 
+        {
+            "discipline" : [ 
+                "drumska trka 225m"
+            ],
+            "_id" : "614f6efdc8e66b64e4fb18d2",
+            "imeprezime" : "Tomas Pidkok",
+            "pol" : "muski",
+            "sport" : "biciklizam",
+            "nacionalnost" : "Velika Britanija",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0,
+            "rezultat" : "",
+            "__v" : 0
+        }, 
+        {
+            "discipline" : [ 
+                "drumska trka 225m"
+            ],
+            "_id" : "614f6f65c8e66b64e4fb18d3",
+            "imeprezime" : "Loson Kredok",
+            "pol" : "muski",
+            "sport" : "biciklizam",
+            "nacionalnost" : "SAD",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0,
+            "rezultat" : "",
+            "__v" : 0
+        }, 
+        {
+            "discipline" : [ 
+                "drumska trka 225m"
+            ],
+            "_id" : "614f6f74c8e66b64e4fb18d4",
+            "imeprezime" : "Brendon MekNalti",
+            "pol" : "muski",
+            "sport" : "biciklizam",
+            "nacionalnost" : "SAD",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0,
+            "rezultat" : "",
+            "__v" : 0
+        }, 
+        {
+            "discipline" : [ 
+                "drumska trka 225m"
+            ],
+            "_id" : "614f6f91c8e66b64e4fb18d5",
+            "imeprezime" : "Konor Filds",
+            "pol" : "muski",
+            "sport" : "biciklizam",
+            "nacionalnost" : "SAD",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0,
+            "rezultat" : "",
+            "__v" : 0
+        }, 
+        {
+            "discipline" : [ 
+                "drumska trka 225m"
+            ],
+            "_id" : "614f6f9dc8e66b64e4fb18d6",
+            "imeprezime" : "Korben Sara",
+            "pol" : "muski",
+            "sport" : "biciklizam",
+            "nacionalnost" : "SAD",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0,
+            "rezultat" : "",
+            "__v" : 0
+        }, 
+        {
+            "discipline" : [ 
+                "drumska trka 225m"
+            ],
+            "_id" : "614f6fa6c8e66b64e4fb18d7",
+            "imeprezime" : "Nik Brus",
+            "pol" : "muski",
+            "sport" : "biciklizam",
+            "nacionalnost" : "SAD",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0,
+            "rezultat" : "",
+            "__v" : 0
+        }
+    ],
+    "prijavljeni" : [],
+    "sport" : "biciklizam",
+    "disciplina" : "drumska trka 225m",
+    "pol" : "muski",
+    "vrsta" : "individualni",
+    "pocetak" : "2021-07-27T11:00:00.000Z",
+    "kraj" : "2021-07-27T16:00:00.000Z",
+    "lokacija" : "dvorana Saporo",
+    "pobednik" : "Brendon MekNalti",
+    "drugi" : "Kris Hoj",
+    "treci" : "Dzejson Keni",
+    "format" : "Svi takmičari učestvuju u jednoj  trci i rangiraju se po konačnom  vremenu (ČČ:MM:SS).",
+    "brojTakmicaraMin" : 8,
+    "brojTakmicaraMax" : 8,
+    "potvrdjeno" : true,
+    "zavrseno" : true
+}{
+    "_id" : ObjectId("6141ff2f43d38220b4c42455"),
+    "delegat" : [ 
+        "Maja Nisevic", 
+        "Francuz Frank"
+    ],
+    "takmicari" : [ 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "skok u vis"
+            ],
+            "_id" : "6140993982f2735810fced8a",
+            "imeprezime" : "Riota Jamagata",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "Japan",
+            "gold" : 1,
+            "silver" : 0,
+            "bronze" : 0,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "skok u vis", 
+                "800m trcanje"
+            ],
+            "_id" : "61409a6382f2735810fced8d",
+            "imeprezime" : "Usain Bolt",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "Jamajka",
+            "gold" : 6,
+            "silver" : 1,
+            "bronze" : 0,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "skok u vis", 
+                "800m trcanje"
+            ],
+            "_id" : "61409aa182f2735810fced8e",
+            "imeprezime" : "Asafa Pauel",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "Jamajka",
+            "gold" : 0,
+            "silver" : 2,
+            "bronze" : 2,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "skok u vis", 
+                "800m trcanje"
+            ],
+            "_id" : "61409aaf82f2735810fced8f",
+            "imeprezime" : "Johan Blejk",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "Jamajka",
+            "gold" : 1,
+            "silver" : 1,
+            "bronze" : 2,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "800m trcanje", 
+                "skok u vis"
+            ],
+            "_id" : "613e52b94475c4ff3bcc5af7",
+            "imeprezime" : "Noa Lajls",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "SAD",
+            "gold" : 0,
+            "silver" : 2,
+            "bronze" : 1,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "800m trcanje", 
+                "skok u vis"
+            ],
+            "_id" : "613e52d94475c4ff3bcc5b05",
+            "imeprezime" : "Son Kroford",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "SAD",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "800m trcanje", 
+                "skok u vis"
+            ],
+            "_id" : "6140972480304d1a8f7aedd6",
+            "imeprezime" : "Dzastin Gatlin",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "SAD",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "skok u vis"
+            ],
+            "_id" : "614213f17ec6ac37f820b59d",
+            "imeprezime" : "Trejvon Bromel",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "SAD",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 1,
+            "rezultat" : ""
+        }
+    ],
+    "prijavljeni" : [],
+    "sport" : "atletika",
+    "disciplina" : "skok u vis",
+    "pol" : "muski",
+    "vrsta" : "individualni",
+    "pocetak" : "2021-07-25T10:00:00.000Z",
+    "kraj" : "2021-07-25T12:00:00.000Z",
+    "lokacija" : "atletski stadion",
+    "pobednik" : "",
+    "format" : "Broj takmičara u finalu je do 8.  Skokovi se mere u metrima i  centimetrima, sa decimalnim  zarezom između (M,CM). Postoji 3 kruga (pokušaja)",
+    "brojTakmicaraMin" : 3,
+    "brojTakmicaraMax" : 8,
+    "drugi" : "",
+    "treci" : "",
+    "potvrdjeno" : true,
+    "zavrseno" : false,
+    "__v" : 0
+}{
+    "_id" : ObjectId("6142356b10fc505da0da7f8d"),
+    "delegat" : [ 
+        "Neki Tamo"
+    ],
+    "takmicari" : [ 
+        {
+            "discipline" : [ 
+                "singl", 
+                "dubl"
+            ],
+            "_id" : "6142353a10fc505da0da7f8b",
+            "imeprezime" : "Serena Vilijams",
+            "pol" : "zenski",
+            "sport" : "tenis",
+            "nacionalnost" : "SAD",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0,
+            "__v" : 0,
+            "rezultat" : "1"
+        }, 
+        {
+            "discipline" : [ 
+                "singl", 
+                "dubl"
+            ],
+            "_id" : "6142354310fc505da0da7f8c",
+            "imeprezime" : "Venus Vilijams",
+            "pol" : "zenski",
+            "sport" : "tenis",
+            "nacionalnost" : "SAD",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0,
+            "__v" : 0,
+            "rezultat" : "10"
+        }, 
+        {
+            "discipline" : [ 
+                "singl", 
+                "dubl"
+            ],
+            "_id" : "6142359710fc505da0da7f8e",
+            "imeprezime" : "Nina Stojanovic",
+            "pol" : "zenski",
+            "sport" : "tenis",
+            "nacionalnost" : "Srbija",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0,
+            "__v" : 0,
+            "rezultat" : "23"
+        }, 
+        {
+            "discipline" : [ 
+                "singl"
+            ],
+            "_id" : "6138cadc4475c4ff3bcbbadd",
+            "imeprezime" : "Naomi Osaka",
+            "pol" : "zenski",
+            "sport" : "tenis",
+            "nacionalnost" : "Japan",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0,
+            "rezultat" : "8"
+        }, 
+        {
+            "discipline" : [ 
+                "singl", 
+                "dubl"
+            ],
+            "_id" : "614364653ca13037d806e173",
+            "imeprezime" : "Misaki Doi",
+            "pol" : "zenski",
+            "sport" : "tenis",
+            "nacionalnost" : "Japan",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0,
+            "rezultat" : "40",
+            "__v" : 0
+        }
+    ],
+    "prijavljeni" : [],
+    "sport" : "tenis",
+    "disciplina" : "singl",
+    "pol" : "zenski",
+    "vrsta" : "individualni",
+    "pocetak" : "2021-08-07T10:00:00.000Z",
+    "kraj" : "2021-08-08T10:00:00.000Z",
+    "lokacija" : "dvorana Tokio",
+    "pobednik" : "",
+    "format" : "Mora da bude 4, 8 ili 16 učesnika. Uparuju se tako da se  određuju nosioci (npr. ako  imamo 8 takmičara, 1. i 2.  nosilac ne mogu se susresti pre  finala, jer jedan ide u levu, a  drugi u desnu polovinu žreba, 3.  i 4. nosilac isto tako, i slično).  Nosioce unosi organizator. Eliminacione runde idu sve do  meča za 3. mesto i finala. Rezultat svakog meča se izražava  u setovima, pri čemu pobednik  mora imati 2 dobijena (2:0 ili  2:1).",
+    "brojTakmicaraMin" : 4,
+    "brojTakmicaraMax" : 16,
+    "drugi" : "",
+    "treci" : "",
+    "potvrdjeno" : false,
+    "zavrseno" : false,
+    "__v" : 0
+}{
+    "_id" : ObjectId("6142586283b84167e88e4e84"),
+    "delegat" : [ 
+        "Neki Tamo"
+    ],
+    "takmicari" : [ 
+        {
+            "discipline" : [ 
+                "10m vazdusni pistolj", 
+                "10m vazdusna puska", 
+                "50m trostav"
+            ],
+            "_id" : "614252742a56ab25b4afc4d1",
+            "imeprezime" : "Zorana Arunovic",
+            "pol" : "zenski",
+            "sport" : "streljastvo",
+            "nacionalnost" : "Srbija",
+            "gold" : 0,
+            "silver" : 1,
+            "bronze" : 0,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "10m vazdusna puska", 
+                "25m malokalib. pistolj", 
+                "10m vazdusni pistolj"
+            ],
+            "_id" : "6144b3e08c413f1870017b0a",
+            "imeprezime" : "Amber Inglis",
+            "pol" : "zenski",
+            "sport" : "streljastvo",
+            "nacionalnost" : "SAD",
+            "gold" : 1,
+            "silver" : 0,
+            "bronze" : 0,
+            "rezultat" : "",
+            "__v" : 0
+        }, 
+        {
+            "discipline" : [ 
+                "50m trostav", 
+                "10m vazdusna puska", 
+                "25m malokalib. pistolj", 
+                "10m vazdusni pistolj"
+            ],
+            "_id" : "6144b43c8c413f1870017b0b",
+            "imeprezime" : "Selin Gobervil",
+            "pol" : "zenski",
+            "sport" : "streljastvo",
+            "nacionalnost" : "Francuska",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 1,
+            "rezultat" : "",
+            "__v" : 0
+        }
+    ],
+    "prijavljeni" : [],
+    "sport" : "streljastvo",
+    "disciplina" : "10m vazdusni pistolj",
+    "pol" : "zenski",
+    "vrsta" : "individualni",
+    "pocetak" : "2021-07-29T10:00:00.000Z",
+    "kraj" : "2021-07-29T11:00:00.000Z",
+    "lokacija" : "dvorana Tokio",
+    "pobednik" : "",
+    "drugi" : "",
+    "treci" : "",
+    "format" : "Podržati samo finalnu rundu  sa najviše 8 takmičara. Gađanje u metu se izvodi u šest  serija za koje se unose pogođeni  krugovi. Rezultati se unose  seriju po seriju. Rangiranje se  vrši prema najvećem broju  krugova.",
+    "brojTakmicaraMin" : 3,
+    "brojTakmicaraMax" : 8,
+    "potvrdjeno" : true,
+    "zavrseno" : false,
+    "__v" : 0
+}{
+    "_id" : ObjectId("6143389aaf775b02fc16fc06"),
+    "delegat" : [ 
+        "Pera Peric", 
+        "Rade Nisevic"
+    ],
+    "takmicari" : [ 
+        {
+            "discipline" : [ 
+                "singl", 
+                "dubl"
+            ],
+            "_id" : "6138ca874475c4ff3bcbbab1",
+            "imeprezime" : "Novak Djokovic",
+            "pol" : "muski",
+            "sport" : "tenis",
+            "nacionalnost" : "Srbija",
+            "gold" : 2,
+            "silver" : 0,
+            "bronze" : 0,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "singl", 
+                "dubl"
+            ],
+            "_id" : "61433a24af775b02fc16fc0d",
+            "imeprezime" : "Dusan Lajovic",
+            "pol" : "muski",
+            "sport" : "tenis",
+            "nacionalnost" : "Srbija",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0,
+            "__v" : 0
+        }, 
+        {
+            "discipline" : [ 
+                "singl"
+            ],
+            "_id" : "614229d6772c316130595237",
+            "imeprezime" : "Kei Nisikori",
+            "pol" : "muski",
+            "sport" : "tenis",
+            "nacionalnost" : "Japan",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0,
+            "__v" : 0
+        }, 
+        {
+            "discipline" : [ 
+                "singl"
+            ],
+            "_id" : "61422a59772c316130595238",
+            "imeprezime" : "Dzon Izner",
+            "pol" : "muski",
+            "sport" : "tenis",
+            "nacionalnost" : "SAD",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 2,
+            "rezultat" : "15"
+        }, 
+        {
+            "discipline" : [ 
+                "singl", 
+                "dubl"
+            ],
+            "_id" : "61422b5b772c31613059523b",
+            "imeprezime" : "Dzenson Bruksbi",
+            "pol" : "muski",
+            "sport" : "tenis",
+            "nacionalnost" : "SAD",
+            "gold" : 0,
+            "silver" : 2,
+            "bronze" : 0,
+            "rezultat" : "16"
+        }, 
+        {
+            "discipline" : [ 
+                "singl", 
+                "dubl"
+            ],
+            "_id" : "61433949af775b02fc16fc09",
+            "imeprezime" : "Endi Marej",
+            "pol" : "muski",
+            "sport" : "tenis",
+            "nacionalnost" : "Velika Britanija",
+            "gold" : 0,
+            "silver" : 1,
+            "bronze" : 0,
+            "rezultat" : "29"
+        }, 
+        {
+            "discipline" : [ 
+                "singl", 
+                "dubl"
+            ],
+            "_id" : "61433969af775b02fc16fc0a",
+            "imeprezime" : "Den Evans",
+            "pol" : "muski",
+            "sport" : "tenis",
+            "nacionalnost" : "Velika Britanija",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 1,
+            "rezultat" : "37"
+        }
+    ],
+    "prijavljeni" : [],
+    "sport" : "tenis",
+    "disciplina" : "singl",
+    "pol" : "muski",
+    "vrsta" : "individualni",
+    "pocetak" : "2021-08-04T10:00:00.000Z",
+    "kraj" : "2021-08-06T13:00:00.000Z",
+    "lokacija" : "dvorana Tokio",
+    "pobednik" : "",
+    "drugi" : "",
+    "treci" : "",
+    "format" : "Mora da bude 4, 8 ili 16 učesnika. Uparuju se tako da se  određuju nosioci (npr. ako  imamo 8 takmičara, 1. i 2.  nosilac ne mogu se susresti pre  finala, jer jedan ide u levu, a  drugi u desnu polovinu žreba, 3.  i 4. nosilac isto tako, i slično).  Nosioce unosi organizator. Eliminacione runde idu sve do  meča za 3. mesto i finala. Rezultat svakog meča se izražava  u setovima, pri čemu pobednik  mora imati 2 dobijena (2:0 ili  2:1).",
+    "brojTakmicaraMin" : 4,
+    "brojTakmicaraMax" : 16,
+    "potvrdjeno" : false,
+    "zavrseno" : false,
+    "__v" : 0
+}{
+    "_id" : ObjectId("6148b94ee6a2cc478cce377d"),
+    "delegat" : [ 
+        "Rade Nisevic"
+    ],
+    "takmicari" : [ 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "800m trcanje", 
+                "skok u vis", 
+                "maraton"
+            ],
+            "_id" : "613e52b94475c4ff3bcc5af7",
+            "imeprezime" : "Noa Lajls",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "SAD",
+            "gold" : 0,
+            "silver" : 2,
+            "bronze" : 2,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "800m trcanje", 
+                "skok u vis", 
+                "maraton"
+            ],
+            "_id" : "613e52d94475c4ff3bcc5b05",
+            "imeprezime" : "Son Kroford",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "SAD",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 0,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "800m trcanje", 
+                "skok u vis", 
+                "maraton"
+            ],
+            "_id" : "6140972480304d1a8f7aedd6",
+            "imeprezime" : "Dzastin Gatlin",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "SAD",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 1,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "skok u vis", 
+                "maraton"
+            ],
+            "_id" : "614213f17ec6ac37f820b59d",
+            "imeprezime" : "Trejvon Bromel",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "SAD",
+            "gold" : 1,
+            "silver" : 1,
+            "bronze" : 1,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "skok u vis", 
+                "maraton"
+            ],
+            "_id" : "6140993982f2735810fced8a",
+            "imeprezime" : "Riota Jamagata",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "Japan",
+            "gold" : 2,
+            "silver" : 0,
+            "bronze" : 0,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "maraton"
+            ],
+            "_id" : "61409b2382f2735810fced90",
+            "imeprezime" : "Josihide Kiriu",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "Japan",
+            "gold" : 0,
+            "silver" : 2,
+            "bronze" : 1,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "skok u vis", 
+                "800m trcanje", 
+                "maraton"
+            ],
+            "_id" : "61409a6382f2735810fced8d",
+            "imeprezime" : "Usain Bolt",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "Jamajka",
+            "gold" : 7,
+            "silver" : 2,
+            "bronze" : 0,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "skok u vis", 
+                "800m trcanje", 
+                "maraton"
+            ],
+            "_id" : "61409aa182f2735810fced8e",
+            "imeprezime" : "Asafa Pauel",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "Jamajka",
+            "gold" : 0,
+            "silver" : 2,
+            "bronze" : 2,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "skok u vis", 
+                "800m trcanje", 
+                "maraton"
+            ],
+            "_id" : "61409aaf82f2735810fced8f",
+            "imeprezime" : "Johan Blejk",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "Jamajka",
+            "gold" : 1,
+            "silver" : 2,
+            "bronze" : 2,
+            "rezultat" : ""
+        }
+    ],
+    "prijavljeni" : [],
+    "sport" : "atletika",
+    "disciplina" : "maraton",
+    "pol" : "muski",
+    "vrsta" : "individualni",
+    "pocetak" : "2021-07-23T10:00:00.000Z",
+    "kraj" : "2021-07-23T11:00:00.000Z",
+    "lokacija" : "atletski stadion",
+    "pobednik" : "",
+    "drugi" : "",
+    "treci" : "",
+    "format" : "Isto kao za trčanje (ČČ:MM:SS). Samo jedna trka!",
+    "brojTakmicaraMin" : 8,
+    "brojTakmicaraMax" : 8,
+    "potvrdjeno" : true,
+    "zavrseno" : false,
+    "__v" : 0
+}{
+    "_id" : ObjectId("6148cee2098714551c16314e"),
+    "delegat" : [ 
+        "Maja Nisevic"
+    ],
+    "takmicari" : [],
+    "prijavljeni" : [],
+    "sport" : "atletika",
+    "disciplina" : "10000m trcanje",
+    "pol" : "muski",
+    "vrsta" : "individualni",
+    "pocetak" : "",
+    "kraj" : "",
+    "lokacija" : "",
+    "pobednik" : "",
+    "format" : "Isto kao za 100m (MM:SS,TT).",
+    "brojTakmicaraMin" : 8,
+    "brojTakmicaraMax" : 8,
+    "drugi" : "",
+    "treci" : "",
+    "potvrdjeno" : false,
+    "zavrseno" : false,
+    "__v" : 0
+}{
+    "_id" : ObjectId("6148df63c427d93f4889940f"),
+    "delegat" : [ 
+        "Rade Nisevic"
+    ],
+    "takmicari" : [ 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "skok u vis", 
+                "800m trcanje", 
+                "maraton"
+            ],
+            "_id" : "61409a6382f2735810fced8d",
+            "imeprezime" : "Usain Bolt",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "Jamajka",
+            "gold" : 8,
+            "silver" : 2,
+            "bronze" : 1,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "skok u vis", 
+                "800m trcanje", 
+                "maraton"
+            ],
+            "_id" : "61409aa182f2735810fced8e",
+            "imeprezime" : "Asafa Pauel",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "Jamajka",
+            "gold" : 0,
+            "silver" : 2,
+            "bronze" : 2,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "skok u vis", 
+                "800m trcanje", 
+                "maraton"
+            ],
+            "_id" : "61409aaf82f2735810fced8f",
+            "imeprezime" : "Johan Blejk",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "Jamajka",
+            "gold" : 2,
+            "silver" : 2,
+            "bronze" : 2,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "skok u vis", 
+                "maraton", 
+                "800m trcanje"
+            ],
+            "_id" : "6140993982f2735810fced8a",
+            "imeprezime" : "Riota Jamagata",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "Japan",
+            "gold" : 2,
+            "silver" : 1,
+            "bronze" : 1,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "800m trcanje", 
+                "skok u vis", 
+                "maraton"
+            ],
+            "_id" : "613e52b94475c4ff3bcc5af7",
+            "imeprezime" : "Noa Lajls",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "SAD",
+            "gold" : 0,
+            "silver" : 2,
+            "bronze" : 2,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "800m trcanje", 
+                "skok u vis", 
+                "maraton"
+            ],
+            "_id" : "613e52b94475c4ff3bcc5af7",
+            "imeprezime" : "Noa Lajls",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "SAD",
+            "gold" : 0,
+            "silver" : 2,
+            "bronze" : 2,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "800m trcanje", 
+                "skok u vis", 
+                "maraton"
+            ],
+            "_id" : "613e52d94475c4ff3bcc5b05",
+            "imeprezime" : "Son Kroford",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "SAD",
+            "gold" : 0,
+            "silver" : 1,
+            "bronze" : 0,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "800m trcanje", 
+                "skok u vis", 
+                "maraton"
+            ],
+            "_id" : "6140972480304d1a8f7aedd6",
+            "imeprezime" : "Dzastin Gatlin",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "SAD",
+            "gold" : 0,
+            "silver" : 0,
+            "bronze" : 1,
+            "rezultat" : ""
+        }, 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "800m trcanje", 
+                "maraton"
+            ],
+            "_id" : "61409b2382f2735810fced90",
+            "imeprezime" : "Josihide Kiriu",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "Japan",
+            "gold" : 0,
+            "silver" : 2,
+            "bronze" : 1,
+            "rezultat" : ""
+        }
+    ],
+    "prijavljeni" : [ 
+        {
+            "discipline" : [ 
+                "100m trcanje", 
+                "200m trcanje", 
+                "400m trcanje", 
+                "skok u vis", 
+                "800m trcanje", 
+                "maraton"
+            ],
+            "_id" : "61409a6382f2735810fced8d",
+            "imeprezime" : "Usain Bolt",
+            "pol" : "muski",
+            "sport" : "atletika",
+            "nacionalnost" : "Jamajka",
+            "gold" : 8,
+            "silver" : 2,
+            "bronze" : 1,
+            "rezultat" : ""
+        }
+    ],
+    "sport" : "atletika",
+    "disciplina" : "800m trcanje",
+    "pol" : "muski",
+    "vrsta" : "individualni",
+    "pocetak" : "2021-07-23T16:00:00.000Z",
+    "kraj" : "2021-07-23T17:00:00.000Z",
+    "lokacija" : "dvorana Tokio",
+    "pobednik" : "",
+    "format" : "Isto kao za 100m (MM:SS,TT).",
+    "brojTakmicaraMin" : 8,
+    "brojTakmicaraMax" : 8,
+    "drugi" : "",
+    "treci" : "",
+    "potvrdjeno" : true,
+    "zavrseno" : false,
+    "__v" : 0
+}{
+    "_id" : ObjectId("614c76394d2fa34db0d0cbdf"),
+    "delegat" : [ 
+        "Neki Tamo", 
+        "Svetlana Nisevic", 
+        "Miodrag Nis"
+    ],
+    "takmicari" : [],
+    "prijavljeni" : [],
+    "sport" : "atletika",
+    "disciplina" : "maraton",
+    "pol" : "zenski",
+    "vrsta" : "individualni",
+    "pocetak" : "",
+    "kraj" : "",
+    "lokacija" : "",
+    "pobednik" : "",
+    "format" : "Isto kao za trčanje (ČČ:MM:SS). Samo jedna trka!\t",
+    "brojTakmicaraMin" : 8,
+    "brojTakmicaraMax" : 8,
+    "drugi" : "",
+    "treci" : "",
+    "potvrdjeno" : false,
+    "zavrseno" : false,
+    "__v" : 0
+}
